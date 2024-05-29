@@ -20,8 +20,9 @@ const projects = [
   {
     title: "Foozy",
     imgSrc: "/works/1.png",
-    code: "https://www.github.com",
-    projectLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    code: "https://bit.ly/4aKGT4Y",
+    projectLink:
+      "https://www.canva.com/design/DAGEGToE2vc/iLsf3Tb1r4fyw6Peup7jZw/view?utm_content=DAGEGToE2vc&utm_campaign=designshare&utm_medium=link&utm_source=editor",
     tech: ["Food Pre Ordering Platform", "MERN Stack"],
     description:
       "Hey there Ever had one of those ideas that felt too big to be real? That's exactly how Foozy started - as a wild dream in my college dorm room. Now, it's a real deal, using tech magic to make food ordering a breeze. Want to hear how we did it? Let's dive in!",
@@ -72,7 +73,8 @@ const projects = [
     title: "Arena",
     imgSrc: "/works/5.png",
     code: "https://www.github.com",
-    projectLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    projectLink:
+      "https://www.figma.com/design/1bUXpdtWCQg1LO5kWQ4mA1/Arena?t=ARcw1ZAq1GGxp1s6-0",
     tech: ["Cricket Betting App UI/UX", "Figma"],
     description:
       "This freelance project was developed using Figma to create a minimum viable product mobile design for a cricket betting application. The client's requirements emphasized a clean user interface (UI) with high interactivity.",
@@ -115,7 +117,7 @@ const projects = [
     title: "WhatTo",
     imgSrc: "/works/4.png",
     code: "https://www.github.com",
-    projectLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    projectLink: "https://mohith28.pythonanywhere.com/",
     tech: ["Youtube Video Sharing Website", "Django"],
     description:
       "From Zero to One: Back in my second year of college, I decided to dive into the world of web development with a bang. My project, built with Django, was a simple platform for sharing YouTube video recommendations. It wasn't perfect, but it was a huge step for me, teaching me a ton and giving me the confidence to tackle bigger challenges. Let's take a trip down memory lane to see how this project shaped my journey.",
@@ -159,7 +161,7 @@ const projects = [
     title: "United 270",
     imgSrc: "/works/6.png",
     code: "https://www.github.com",
-    projectLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    projectLink: "https://united270.com/",
     tech: ["Company Landing Page", "NextJS"],
     description:
       "Let's talk about a project that was a real headache from start to finish. Dealing with a client who was impossible to please, I pushed through to completion, only to end up with a website that was far from what I'd hoped for. It was a tough pill to swallow, but this experience taught me a lot about people management and when to trust my gut. Here's the story of how I learned to say no and stand my ground.",

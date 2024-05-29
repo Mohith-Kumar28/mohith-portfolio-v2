@@ -91,9 +91,9 @@ export const Project = ({
               </h4>
               <div className="w-full h-[1px] bg-zinc-600" />
 
-              <Link href={code} target="_blank" rel="nofollow">
+              {/* <Link href={code} target="_blank" rel="nofollow">
                 <AiFillGithub className="text-xl text-zinc-300 hover:text-rose-300 transition-colors" />
-              </Link>
+              </Link> */}
 
               <Link href={projectLink} target="_blank" rel="nofollow">
                 <AiOutlineExport className="text-xl text-zinc-300 hover:text-rose-300 transition-colors" />

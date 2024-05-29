@@ -71,14 +71,14 @@ export const ProjectModal = ({
               Project Links<span className="text-rose-500">.</span>
             </p>
             <div className="flex items-center gap-4 text-sm">
-              <Link
+              {/* <Link
                 target="_blank"
                 rel="nofollow"
                 className="text-zinc-300 hover:text-rose-300 transition-colors flex items-center gap-1"
                 href={code}
               >
                 <AiFillGithub /> Source Code
-              </Link>
+              </Link> */}
               <Link
                 target="_blank"
                 rel="nofollow"
