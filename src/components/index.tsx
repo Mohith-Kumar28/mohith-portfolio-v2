@@ -6,6 +6,7 @@ import { About } from "./about/About";
 import { Projects } from "./projects/Projects";
 import { Experience } from "./experience/Experience";
 import { Contact } from "./contact/Contact";
+import ContactForm from "./contact/ContactForm";
 
 export const HomPage = () => {
   return (

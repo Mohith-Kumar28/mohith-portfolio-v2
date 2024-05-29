@@ -1,17 +1,18 @@
 import { AiFillMail } from "react-icons/ai";
 import Link from "next/link";
 import Reveal from "../util/Reveal";
+import ContactForm from "./ContactForm";
 
 export const Contact = () => {
   return (
     <section className="section-wrapper" id="contact">
-      <div className="max-w-xl mx-auto bg-zinc-800 px-8 py-12 rounded-xl">
+      <div className="max-w-xl mx-auto bg-zinc-800 px-8 py-9 rounded-xl">
         <Reveal width="w-full">
           <h4 className="text-4xl md:text-5xl text-center font-black">
             Contact<span className="text-rose-500">.</span>
           </h4>
         </Reveal>
-        <Reveal width="w-full">
+        {/* <Reveal width="w-full">
           <p className="text-center my-8 text-zinc-300 leading-relaxed">
             Shoot me an email if you want to connect! You can also find me on{" "}
             <Link
@@ -31,6 +32,9 @@ export const Contact = () => {
               <span>dev@mohith.in</span>
             </div>
           </Link>
+        </Reveal> */}
+        <Reveal width="w-full">
+          <ContactForm />
         </Reveal>
       </div>
     </section>
