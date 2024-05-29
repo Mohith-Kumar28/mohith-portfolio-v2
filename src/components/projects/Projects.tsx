@@ -116,7 +116,7 @@ const projects = [
     imgSrc: "project-imgs/example-project.jpg",
     code: "https://www.github.com",
     projectLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    tech: ["Django", "Full Stack"],
+    tech: ["Youtube Video Sharing Website", "Django"],
     description:
       "From Zero to One: Back in my second year of college, I decided to dive into the world of web development with a bang. My project, built with Django, was a simple platform for sharing YouTube video recommendations. It wasn't perfect, but it was a huge step for me, teaching me a ton and giving me the confidence to tackle bigger challenges. Let's take a trip down memory lane to see how this project shaped my journey.",
     modalContent: (
@@ -160,7 +160,7 @@ const projects = [
     imgSrc: "project-imgs/example-project.jpg",
     code: "https://www.github.com",
     projectLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    tech: ["Frontend"],
+    tech: ["Company Landing Page", "NextJS"],
     description:
       "Let's talk about a project that was a real headache from start to finish. Dealing with a client who was impossible to please, I pushed through to completion, only to end up with a website that was far from what I'd hoped for. It was a tough pill to swallow, but this experience taught me a lot about people management and when to trust my gut. Here's the story of how I learned to say no and stand my ground.",
     modalContent: (

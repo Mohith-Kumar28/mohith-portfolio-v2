@@ -22,9 +22,8 @@ const Hero = () => {
           </Reveal>
           <Reveal>
             <p className="pointer-events-auto leading-relaxed md:leading-relaxed max-w-xl text-sm text-zinc-300 md:text-base">
-              I've spent the last 5 years building and scaling software for some
-              pretty cool companies. I also teach people to paint online (incase
-              you've got an empty canvas layin' around 🎨). Let's connect!
+              / Building beautiful Web Experiences <br />/ Front-End Developer
+              at MapUp <br />/ Curious at exploring
             </p>
           </Reveal>
           <Reveal>
