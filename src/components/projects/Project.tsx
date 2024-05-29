@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { AiFillGithub, AiOutlineExport } from "react-icons/ai";
 import { ProjectModal } from "./ProjectModal";
 import Reveal from "../util/Reveal";
+import Image from "next/image";
 
 interface Props {
   modalContent: JSX.Element;
@@ -59,7 +60,7 @@ export const Project = ({
           onClick={() => setIsOpen(true)}
           className="w-full aspect-video bg-zinc-700 cursor-pointer relative rounded-lg overflow-hidden"
         >
-          <img
+          {/* <img
             src={imgSrc}
             alt={`An image of the ${title} project.`}
             style={{
@@ -67,6 +68,19 @@ export const Project = ({
               rotate: hovered ? "2deg" : "0deg",
             }}
             className="w-[85%] absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/4 transition-all rounded"
+          /> */}
+
+          <Image
+            src={imgSrc}
+            alt={`An image of the ${title} project.`}
+            layout="fill"
+            objectFit="cover"
+            quality={100}
+            className="w-[85%] absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/4 transition-all rounded hover:scale-90"
+            style={{
+              transformOrigin: "center",
+              transform: hovered ? "rotate(2deg)" : "none",
+            }}
           />
         </div>
         <div className="mt-6">

@@ -19,7 +19,7 @@ export const Projects = () => {
 const projects = [
   {
     title: "Foozy",
-    imgSrc: "project-imgs/example-project.jpg",
+    imgSrc: "/works/1.png",
     code: "https://www.github.com",
     projectLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     tech: ["Food Pre Ordering Platform", "MERN Stack"],
@@ -70,7 +70,7 @@ const projects = [
   },
   {
     title: "Arena",
-    imgSrc: "project-imgs/example-project.jpg",
+    imgSrc: "/works/5.png",
     code: "https://www.github.com",
     projectLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     tech: ["Cricket Betting App UI/UX", "Figma"],
@@ -113,7 +113,7 @@ const projects = [
   },
   {
     title: "WhatTo",
-    imgSrc: "project-imgs/example-project.jpg",
+    imgSrc: "/works/4.png",
     code: "https://www.github.com",
     projectLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     tech: ["Youtube Video Sharing Website", "Django"],
@@ -157,7 +157,7 @@ const projects = [
   },
   {
     title: "United 270",
-    imgSrc: "project-imgs/example-project.jpg",
+    imgSrc: "/works/6.png",
     code: "https://www.github.com",
     projectLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     tech: ["Company Landing Page", "NextJS"],
