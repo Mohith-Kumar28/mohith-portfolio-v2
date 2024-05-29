@@ -55,7 +55,11 @@ const TerminalHeader = () => {
       <div className="w-3 h-3 rounded-full bg-yellow-500" />
       <div className="w-3 h-3 rounded-full bg-green-500" />
       <span className="text-sm text-slate-200 font-semibold absolute left-[50%] -translate-x-[50%]">
-        <Link href="mailto:dev@mohith.in" target="_blank">
+        <Link
+          href="mailto:dev@mohith.in"
+          target="_blank"
+          className="hover:underline"
+        >
           dev@mohith.in
         </Link>
       </span>
