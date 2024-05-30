@@ -2,16 +2,18 @@ import { AiFillMail } from "react-icons/ai";
 import Link from "next/link";
 import Reveal from "../util/Reveal";
 import ContactForm from "./ContactForm";
+import { SectionHeader } from "../util/SectionHeader";
 
 export const Contact = () => {
   return (
     <section className="section-wrapper" id="contact">
-      <div className="max-w-xl mx-auto bg-zinc-800 px-8 py-9 rounded-xl">
-        <Reveal width="w-full">
+      <SectionHeader title="Contact" dir="r" />
+      <div className="  bg-rose-500  rounded-xl">
+        {/* <Reveal width="w-full">
           <h4 className="text-4xl md:text-5xl text-center font-black">
             Contact<span className="text-rose-500">.</span>
           </h4>
-        </Reveal>
+        </Reveal> */}
         {/* <Reveal width="w-full">
           <p className="text-center my-8 text-zinc-300 leading-relaxed">
             Shoot me an email if you want to connect! You can also find me on{" "}

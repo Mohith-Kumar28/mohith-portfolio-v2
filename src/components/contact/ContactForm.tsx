@@ -39,7 +39,7 @@ const ContactForm = () => {
         onClick={() => {
           inputRef.current?.focus();
         }}
-        className="h-96 bg-zinc-950  backdrop-blur rounded-lg w-full max-w-3xl mx-auto overflow-y-auto shadow-xl cursor-text font-mono mt-6"
+        className="h-96 bg-zinc-950  backdrop-blur rounded-lg w-full  mx-auto overflow-y-auto shadow-xl cursor-text font-mono mt-2"
       >
         <TerminalHeader />
         <TerminalBody inputRef={inputRef} containerRef={containerRef} />
@@ -325,7 +325,7 @@ export default ContactForm;
 const QUESTIONS: QuestionType[] = [
   {
     key: "name",
-    text: "To start, could you give us ",
+    text: "To start, could you enter",
     postfix: "your name?",
     complete: false,
     value: "",
