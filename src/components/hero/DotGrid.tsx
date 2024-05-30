@@ -40,7 +40,7 @@ const DotGrid = () => {
           clearInterval(id);
           setSimulationActive(false);
         }
-      }, 3000); // Adjust the interval time as needed
+      }, 3500); // Adjust the interval time as needed
 
       setIntervalId(id);
     }

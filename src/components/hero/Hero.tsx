@@ -16,7 +16,7 @@ const Hero = () => {
             <h2 className="pointer-events-auto my-2 text-xl sm:text-2xl text-zinc-300 md:my-4 md:text-4xl">
               I'm a{" "}
               <span className="font-semibold text-rose-500">
-                Full Stack Developer
+                {`${"{"} Full Stack Developer ${"}"}`}
               </span>
             </h2>
           </Reveal>
