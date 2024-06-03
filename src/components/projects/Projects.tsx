@@ -254,6 +254,15 @@ const projects = [
 export const miniProjects = [
   {
     img: "",
+    name: "Foozy UI/UX",
+    description: "",
+    live_link: "https://bit.ly/3JSF9eS",
+    github_link: "",
+    skills: ["Figma", "User_Interface", "User_Experience"],
+    live_icon: "/assets/icons/figmaIcon.png",
+  },
+  {
+    img: "",
     name: "ST.Augustine hospital landing page",
     description: "",
     live_link: "https://bit.ly/3IPaCgX",
@@ -263,15 +272,6 @@ export const miniProjects = [
     live_icon: "",
   },
 
-  {
-    img: "",
-    name: "Old Portfolio Website",
-    description: "",
-    live_link: "https://www.mohith.in/",
-    github_link: "https://github.com/Mohith-Kumar28/my_portfolio",
-    skills: ["NextJS", "TailwindCSS", "Lamma-2", "LangChain", "OpenAI API"],
-    live_icon: "",
-  },
   {
     img: "",
     name: "Old Portfolio UI/UX",
@@ -360,6 +360,15 @@ export const miniProjects = [
     live_link: "",
     github_link: "https://bit.ly/43Rh2V0",
     skills: ["Python", "Fast API", "Lamma-2", "OpenAI"],
+    live_icon: "",
+  },
+  {
+    img: "",
+    name: "Old Portfolio Website",
+    description: "",
+    live_link: "https://www.mohith.in/",
+    github_link: "https://github.com/Mohith-Kumar28/my_portfolio",
+    skills: ["NextJS", "TailwindCSS", "Lamma-2", "LangChain", "OpenAI API"],
     live_icon: "",
   },
 ];
