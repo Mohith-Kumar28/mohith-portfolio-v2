@@ -7,7 +7,7 @@ export const Header = () => {
   return (
     <header className="h-[72px] px-4 flex items-center justify-between sticky top-0 z-20 bg-zinc-900/50 backdrop-blur-md">
       <MyLinks />
-      <OutlineButton onClick={() => window.open("/resume_v1.pdf")}>
+      <OutlineButton onClick={() => window.open("/resume_v4.pdf")}>
         My Resume
       </OutlineButton>
     </header>
@@ -34,7 +34,7 @@ export const MyLinks = () => (
     </Link>
     <Link
       className="text-zinc-300 hover:text-rose-300 transition-colors"
-      href="mailto:dev@mohith.in"
+      href="mailto: mohithkumar808@gmail.com"
       target="_blank"
       rel="nofollow"
     >

@@ -28,10 +28,10 @@ export const Contact = () => {
           </p>
         </Reveal>
         <Reveal width="w-full">
-          <Link href="mailto:dev@mohith.in">
+          <Link href="mailto: mohithkumar808@gmail.com">
             <div className="flex items-center justify-center gap-2 w-fit text-lg md:text-2xl whitespace-normal mx-auto hover:text-rose-300 transition-colors">
               <AiFillMail />
-              <span>dev@mohith.in</span>
+              <span> mohithkumar808@gmail.com</span>
             </div>
           </Link>
         </Reveal> */}

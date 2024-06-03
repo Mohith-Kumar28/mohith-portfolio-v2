@@ -56,11 +56,11 @@ const TerminalHeader = () => {
       <div className="w-3 h-3 rounded-full bg-green-500" />
       <span className="text-sm text-slate-200 font-semibold absolute left-[50%] -translate-x-[50%]">
         <Link
-          href="mailto:dev@mohith.in"
+          href="mailto: mohithkumar808@gmail.com"
           target="_blank"
           className="hover:underline"
         >
-          dev@mohith.in
+          mohithkumar808@gmail.com
         </Link>
       </span>
     </div>
@@ -119,7 +119,15 @@ const InitialText = () => {
   return (
     <>
       <p className="">
-        Shoot me an email if you want to connect! You can also find me on{" "}
+        Shoot me an{" "}
+        <Link
+          href="mailto: mohithkumar808@gmail.com"
+          target="_blank"
+          className="text-rose-300 hover:underline"
+        >
+          email
+        </Link>{" "}
+        if you want to connect! You can also find me on{" "}
         <Link
           href="https://www.linkedin.com/in/mohith-kumar-chaluvadi/"
           target="_blank"
@@ -167,7 +175,7 @@ const CurrentQuestion = ({ curQuestion }: CurrentQuestionProps) => {
 
   return (
     <p>
-      {curQuestion.text || ""}
+      {curQuestion.text || " "}{" "}
       {curQuestion.postfix && (
         <span className="text-violet-300">{curQuestion.postfix}</span>
       )}
@@ -196,7 +204,7 @@ const Summary = ({ questions, setQuestions }: SummaryProps) => {
     );
 
     // Extracting specific fields from formData
-    const toAddress = "dev@mohith.in"; // Fixed recipient email address
+    const toAddress = " mohithkumar808@gmail.com"; // Fixed recipient email address
     const subject = formData["subject"] || ""; // Default to empty string if 'subject' is not found
     const body = formData["description"] || ""; // Default to empty string if 'description' is not found
 

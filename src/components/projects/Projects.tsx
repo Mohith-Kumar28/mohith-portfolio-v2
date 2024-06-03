@@ -1,17 +1,62 @@
-import React from "react";
+import React, { useState } from "react";
 import { SectionHeader } from "../util/SectionHeader";
 import { Project } from "./Project";
+import { motion } from "framer-motion";
+import { OutlineButton } from "../buttons/OutlineButton";
+import MiniProjectCard from "./MiniProjectCard";
 
 export const Projects = () => {
+  const [viewAllOpen, setViewAllOpen] = useState(false);
   return (
     <section className="section-wrapper" id="projects">
       <SectionHeader title="Projects" dir="r" />
 
-      <div className="grid gap-12 grid-cols-1 md:grid-cols-2">
+      <motion.div
+        initial={false}
+        animate={viewAllOpen ? "open" : "closed"}
+        style={{
+          overflow: "hidden",
+        }}
+        variants={{
+          open: {
+            height: "fit-content",
+          },
+          closed: {
+            height: 800,
+          },
+        }}
+        className="relative grid gap-12 grid-cols-1 md:grid-cols-2 p-8"
+      >
+        {/* <div className="grid gap-12 grid-cols-1 md:grid-cols-2"> */}
         {projects.map((project) => {
           return <Project key={project.title} {...project} />;
         })}
-      </div>
+        {/* </div> */}
+
+        {/* <div className="flex flex-wrap w-full gap-6 mt-4"> */}
+        {miniProjects.map((project) => (
+          <MiniProjectCard key={project.name} project={project} />
+        ))}
+        {/* </div> */}
+
+        <motion.div
+          variants={{
+            open: {
+              top: "100%",
+            },
+            closed: {
+              top: "50%",
+            },
+          }}
+          className="absolute bottom-0 left-0 right-0 bg-gradient-to-b from-zinc-950/0 to-zinc-950"
+        />
+      </motion.div>
+      <OutlineButton
+        onClick={() => setViewAllOpen((pv) => !pv)}
+        className={`mx-auto ${viewAllOpen ? " mt-12 " : " -mt-16 "} =`}
+      >
+        {viewAllOpen ? "View less" : "View more"}
+      </OutlineButton>
     </section>
   );
 };
@@ -31,7 +76,7 @@ const projects = [
         <p>
           Ah, the tale of Foozy begins in the hallowed halls of college, where
           dreams of grandeur mix with the reality of deadlines. Amidst the
-          chaos, a spark ignited – the idea to create a platform that would
+          chaos, a spark ignited - the idea to create a platform that would
           streamline the food ordering process, making it not just convenient
           but a breeze for everyone involved. And thus, Foozy was born, a
           shining beacon of innovation in the culinary world.
@@ -203,5 +248,118 @@ const projects = [
         </p>
       </>
     ),
+  },
+];
+
+export const miniProjects = [
+  {
+    img: "",
+    name: "ST.Augustine hospital landing page",
+    description: "",
+    live_link: "https://bit.ly/3IPaCgX",
+    github_link:
+      "https://github.com/Mohith-Kumar28/saint_augustine_hospital_website",
+    skills: ["NextJS", "TailwindCSS"],
+    live_icon: "",
+  },
+
+  {
+    img: "",
+    name: "Old Portfolio Website",
+    description: "",
+    live_link: "https://www.mohith.in/",
+    github_link: "https://github.com/Mohith-Kumar28/my_portfolio",
+    skills: ["NextJS", "TailwindCSS", "Lamma-2", "LangChain", "OpenAI API"],
+    live_icon: "",
+  },
+  {
+    img: "",
+    name: "Old Portfolio UI/UX",
+    description: "",
+    live_link: "https://bit.ly/3OF24Nz",
+    github_link: "",
+    skills: ["Figma", "User Interface", "User Experience"],
+    live_icon: "",
+  },
+  {
+    img: "",
+    name: "Globe Quest",
+    description: "",
+    live_link: "https://bit.ly/43U9DEz",
+    github_link: "https://github.com/Mohith-Kumar28/mapup_assignment",
+    skills: ["NextJS", "TailwindCSS", "Google Maps", "Redux"],
+    live_icon: "",
+  },
+  {
+    img: "",
+    name: "Oakley",
+    description: "",
+    live_link: "https://bit.ly/3XK4ld7",
+    github_link: "https://github.com/Mohith-Kumar28/Realestate-project",
+    skills: ["NextJS", "TailwindCSS"],
+    live_icon: "",
+  },
+  {
+    img: "",
+    name: "SpaceXplorer",
+    description: "",
+    live_link: "https://bit.ly/3Ohdvuv",
+    github_link: "https://github.com/Mohith-Kumar28/spacex_visualization",
+    skills: ["NextJS", "Redux"],
+    live_icon: "",
+  },
+  {
+    img: "",
+    name: "TouchSky",
+    description: "",
+    live_link: "https://bit.ly/43eZIZS",
+    github_link: "https://github.com/Mohith-Kumar28/jobs_website",
+    skills: ["NextJS", "TailwindCSS"],
+    live_icon: "",
+  },
+  {
+    img: "",
+    name: "Boujee",
+    description: "",
+    live_link: "https://bit.ly/3ri9zAT",
+    github_link: "https://github.com/Mohith-Kumar28/data_website",
+    skills: ["NextJS", "TailwindCSS"],
+    live_icon: "",
+  },
+  {
+    img: "",
+    name: "Mystic Beauty",
+    description: "",
+    live_link: "https://bit.ly/3QgYI4H",
+    github_link: "https://github.com/Mohith-Kumar28/cosmetics_website",
+    skills: ["NextJS", "TailwindCSS"],
+    live_icon: "",
+  },
+  {
+    img: "",
+    name: "Menu Design",
+    description: "",
+    live_link: "https://bit.ly/43iOLXh",
+    github_link: "",
+    skills: ["Canva"],
+    live_icon: "",
+  },
+  {
+    img: "",
+    name: "UI/UX contribution",
+    description: "",
+    live_link: "https://bit.ly/46GZlKA",
+    github_link: "",
+    skills: ["Figma"],
+    live_icon: "",
+  },
+  {
+    img: "",
+    name: "Trained AI Gpt API",
+    description: "",
+    live_link: "",
+    github_link: "https://bit.ly/43Rh2V0",
+    skills: ["Python", "Fast API", "Lamma-2", "OpenAI"],
+    live_icon: "",
   },
 ];
