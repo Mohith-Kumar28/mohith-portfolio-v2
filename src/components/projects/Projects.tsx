@@ -4,7 +4,6 @@ import { Project } from "./Project";
 import { motion } from "framer-motion";
 import { OutlineButton } from "../buttons/OutlineButton";
 import MiniProjectCard from "./MiniProjectCard";
-import Reveal from "../util/Reveal";
 
 export const Projects = () => {
   const [viewAllOpen, setViewAllOpen] = useState(false);
@@ -36,9 +35,7 @@ export const Projects = () => {
 
         {/* <div className="flex flex-wrap w-full gap-6 mt-4"> */}
         {miniProjects.map((project) => (
-          <Reveal key={project.name}>
-            <MiniProjectCard project={project} />
-          </Reveal>
+          <MiniProjectCard key={project.name} project={project} />
         ))}
         {/* </div> */}
 
