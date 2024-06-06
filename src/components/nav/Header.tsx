@@ -25,7 +25,7 @@ export const MyLinks = () => (
   <div className="flex items-center text-lg gap-4">
     <Link
       className="text-zinc-300 hover:text-rose-300 transition-colors"
-      href="https://www.linkedin.com/in/mohith-kumar-chaluvadi/"
+      href="https://bit.ly/3Yj6jBy"
       target="_blank"
       rel="nofollow"
     >
@@ -33,7 +33,7 @@ export const MyLinks = () => (
     </Link>
     <Link
       className="text-zinc-300 hover:text-rose-300 transition-colors"
-      href="https://github.com/Mohith-Kumar28"
+      href="https://bit.ly/3Ylzsw7"
       target="_blank"
       rel="nofollow"
     >
@@ -41,7 +41,7 @@ export const MyLinks = () => (
     </Link>
     <Link
       className="text-zinc-300 hover:text-rose-300 transition-colors"
-      href="mailto: mohithkumar808@gmail.com"
+      href="mailto:mohithkumar808@gmail.com"
       target="_blank"
       rel="nofollow"
     >
@@ -49,7 +49,7 @@ export const MyLinks = () => (
     </Link>
     <Link
       className="text-zinc-300 hover:text-rose-300 transition-colors"
-      href="https://www.behance.net/mohithkumar12"
+      href="https://bit.ly/3VjUrhM"
       target="_blank"
       rel="nofollow"
     >
