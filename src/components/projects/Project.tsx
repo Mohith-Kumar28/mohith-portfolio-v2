@@ -85,20 +85,20 @@ export const Project = ({
         </div>
         <div className="mt-6">
           <Reveal width="w-full">
-            <div className="flex items-center gap-2 w-full">
-              <h4 className="font-bold text-lg shrink-0 max-w-[calc(100%_-_150px)]">
-                {title}
-              </h4>
-              <div className="w-full h-[1px] bg-zinc-600" />
+            <Link href={projectLink} target="_blank" rel="nofollow">
+              <div className="flex items-center gap-2 w-full">
+                <h4 className="font-bold text-lg shrink-0 hover:underline decoration-dotted max-w-[calc(100%_-_150px)]">
+                  {title}
+                </h4>
+                <div className="w-full h-[1px] bg-zinc-600" />
 
-              {/* <Link href={code} target="_blank" rel="nofollow">
+                {/* <Link href={code} target="_blank" rel="nofollow">
                 <AiFillGithub className="text-xl text-zinc-300 hover:text-rose-300 transition-colors" />
               </Link> */}
 
-              <Link href={projectLink} target="_blank" rel="nofollow">
                 <AiOutlineExport className="text-xl text-zinc-300 hover:text-rose-300 transition-colors" />
-              </Link>
-            </div>
+              </div>
+            </Link>
           </Reveal>
           <Reveal>
             <div className="flex flex-wrap gap-4 text-sm text-rose-300 my-2">

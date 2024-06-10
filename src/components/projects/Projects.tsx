@@ -45,10 +45,10 @@ export const Projects = () => {
               top: "100%",
             },
             closed: {
-              top: "50%",
+              top: "70%",
             },
           }}
-          className="absolute bottom-0 left-0 right-0 bg-gradient-to-b from-zinc-950/0 to-zinc-950"
+          className="absolute bottom-0  left-0 right-0 bg-gradient-to-b from-zinc-950/0 to-zinc-950"
         />
       </motion.div>
       <OutlineButton
@@ -115,9 +115,65 @@ const projects = [
     ),
   },
   {
+    title: "MapUp Toll Calculator",
+    imgSrc: "/works/7.png",
+    code: "",
+    projectLink:
+      "https://marketplace.gomotive.com/app/tolltally-gps-based-instant-toll-billing",
+    tech: [
+      "Motive Plugin",
+      "AWS",
+      "ExpressJS",
+      "MongoDB",
+      "TypeScript",
+      "NextJS",
+    ],
+    description:
+      "Ever dreamt of simplifying toll calculations for fleets? That's exactly what I set out to achieve with MapUp's Toll Calculator. From concept to deployment, it was a rollercoaster ride filled with tech stacks, late-night debugging, and the occasional victory dance.",
+    modalContent: (
+      <>
+        <p>
+          Dive into the world of MapUp's Toll Calculator, a project that
+          transformed a complex task into a breeze for fleet operators. Starting
+          with a blank canvas and a vision, I navigated through the challenges
+          of integrating various technologies to create a seamless experience.
+        </p>
+        <p>
+          At the heart of this project was a powerful trio: AWS for cloud
+          infrastructure, ExpressJS for backend logic, and MongoDB for data
+          storage. These technologies formed the backbone of our application,
+          ensuring scalability and reliability.
+        </p>
+        <p>
+          The frontend was crafted with NextJS, providing a fast and responsive
+          interface that matched the high standards of modern web applications.
+          TypeScript played a crucial role in maintaining code quality and
+          preventing potential bugs.
+        </p>
+        <p>
+          One of the standout features was the integration of an
+          industry-standard plugin into the Motive marketplace, enhancing the
+          functionality and usability of our toll calculator.
+        </p>
+        <p>
+          The journey to support up to 100,000 users was a testament to the
+          power of cloud computing and efficient backend architecture. AWS
+          proved to be the perfect partner, offering scalability and performance
+          that met our growing demands.
+        </p>
+        <p>
+          Through this project, I learned the importance of perseverance,
+          collaboration, and the endless possibilities of technology. MapUp's
+          Toll Calculator is not just a tool; it's a reflection of innovative
+          thinking and dedication to improving everyday processes.
+        </p>
+      </>
+    ),
+  },
+  {
     title: "Arena",
     imgSrc: "/works/5.png",
-    code: "https://www.github.com",
+    code: "",
     projectLink:
       "https://www.figma.com/design/1bUXpdtWCQg1LO5kWQ4mA1/Arena?t=ARcw1ZAq1GGxp1s6-0",
     tech: ["Cricket Betting App UI/UX", "Figma"],
@@ -154,6 +210,50 @@ const projects = [
           While it remains a concept, Arena's design principles and features
           serve as valuable insights into enhancing user experiences in
           competitive sports betting platforms.
+        </p>
+      </>
+    ),
+  },
+  {
+    title: "Check It Out Media",
+    imgSrc: "/works/8.png",
+    code: "https://github.com/yourusername/checkitoutmedialandingpage",
+    projectLink: "https://whimsical-marzipan-26c215.netlify.app/",
+    tech: ["Landing Page Development", "NextJS", "Framer Motion"],
+    description:
+      "Embarked on a creative journey to elevate Check It Out Media's online presence with a sleek, engaging landing page. Leveraging NextJS for rapid development and Framer Motion for dynamic animations, I crafted a digital showcase that encapsulates their unique brand essence.",
+    modalContent: (
+      <>
+        <p>
+          Step into the world of Check It Out Media, a company that breathes
+          life into words through their creative projects. My mission was to
+          transform their digital footprint with a landing page that not only
+          showcases their work but also embodies their vibrant spirit.
+        </p>
+        <p>
+          Utilizing NextJS, I built a responsive and performant foundation for
+          the site, ensuring a seamless experience across devices. This choice
+          allowed for quick iterations and deployments, fitting perfectly with
+          the agile nature of the project.
+        </p>
+        <p>
+          To bring the design to life, Framer Motion became my animation
+          powerhouse. With its intuitive API, I was able to implement smooth
+          transitions and interactions that captivate visitors, aligning with
+          Check It Out Media's playful and innovative ethos.
+        </p>
+        <p>
+          The result is a landing page that stands out in the crowded digital
+          space, reflecting Check It Out Media's commitment to excellence and
+          creativity. It's not just a webpage; it's a gateway to exploring the
+          magic of words brought to life.
+        </p>
+        <p>
+          This project was a testament to the power of technology in
+          storytelling. By combining NextJS's efficiency with Framer Motion's
+          dynamism, I was able to create a digital experience that resonates
+          with Check It Out Media's audience, encouraging engagement and
+          fostering connections.
         </p>
       </>
     ),
