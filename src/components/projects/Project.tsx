@@ -90,13 +90,12 @@ export const Project = ({
                 <h4 className="font-bold text-lg shrink-0 hover:underline decoration-dotted max-w-[calc(100%_-_150px)]">
                   {title}
                 </h4>
-                <div className="w-full h-[1px] bg-zinc-600" />
+                <div className=" flex flex-grow h-[1px] bg-zinc-600" />
 
                 {/* <Link href={code} target="_blank" rel="nofollow">
                 <AiFillGithub className="text-xl text-zinc-300 hover:text-rose-300 transition-colors" />
               </Link> */}
-
-                <AiOutlineExport className="text-xl text-zinc-300 hover:text-rose-300 transition-colors" />
+                <AiOutlineExport className=" text-xl text-zinc-300 hover:text-rose-300 transition-colors" />
               </div>
             </Link>
           </Reveal>
