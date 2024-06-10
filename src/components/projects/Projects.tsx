@@ -115,13 +115,13 @@ const projects = [
     ),
   },
   {
-    title: "MapUp Toll Calculator",
+    title: "Motive Plugin",
     imgSrc: "/works/7.png",
     code: "",
     projectLink:
       "https://marketplace.gomotive.com/app/tolltally-gps-based-instant-toll-billing",
     tech: [
-      "Motive Plugin",
+      "Toll Data Dashboard",
       "AWS",
       "ExpressJS",
       "MongoDB",
