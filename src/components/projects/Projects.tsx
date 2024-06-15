@@ -306,7 +306,7 @@ const projects = [
     title: "United 270",
     imgSrc: "/works/6.png",
     code: "https://www.github.com",
-    projectLink: "https://united270.com/",
+    projectLink: "https://sensational-paprenjak-71c246.netlify.app/",
     tech: ["Company Landing Page", "NextJS"],
     description:
       "Let's talk about a project that was a real headache from start to finish. Dealing with a client who was impossible to please, I pushed through to completion, only to end up with a website that was far from what I'd hoped for. It was a tough pill to swallow, but this experience taught me a lot about people management and when to trust my gut. Here's the story of how I learned to say no and stand my ground.",
