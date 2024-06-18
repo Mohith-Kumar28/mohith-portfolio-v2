@@ -1,13 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import {
-  SiBehance,
-  SiCodepen,
-  SiGithub,
-  SiGmail,
-  SiLinkedin,
-  SiX,
-} from "react-icons/si";
+import { SiBehance, SiGithub, SiGmail, SiLinkedin, SiX } from "react-icons/si";
 import { OutlineButton } from "../buttons/OutlineButton";
 
 export const Header = () => {

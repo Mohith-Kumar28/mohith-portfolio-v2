@@ -137,7 +137,7 @@ const InitialText = () => {
         </Link>{" "}
         if that&apos;s more your speed.
       </p>
-      <p className="whitespace-nowrap overflow-hidden font-light">
+      <p className=" overflow-hidden font-light">
         ------------------------------------------------------------------------
       </p>
     </>
