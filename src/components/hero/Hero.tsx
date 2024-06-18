@@ -21,9 +21,14 @@ const Hero = () => {
             </h2>
           </Reveal>
           <Reveal>
-            <p className="pointer-events-auto leading-relaxed md:leading-relaxed max-w-xl text-sm text-zinc-300 md:text-base">
-              / Building beautiful Web Experiences <br />/ Front-End Developer
-              at MapUp <br />/ Curious at exploring
+            <p className="pointer-events-auto leading-relaxed md:leading-relaxed max-w-xl text-sm text-zinc-300 bg-zinc-950/10 rounded-xl py-3 pr-2 backdrop-blur-lg md:text-base">
+              {/* / Building beautiful Web Experiences <br />/ Front-End Developer
+              at MapUp <br />/ Curious at exploring */}
+              Crafting digital masterpieces, one line at a time. With 2+ years
+              of experience building innovative software solutions, and a
+              passion for UI/UX, I bring a unique blend of technical prowess and
+              creative flair. Explore my work and let's create something
+              extraordinary together.
             </p>
           </Reveal>
           <Reveal>
