@@ -50,11 +50,11 @@ const ContactForm = () => {
 
 const TerminalHeader = () => {
   return (
-    <div className="w-full p-3 bg-zinc-600 flex items-center gap-1 sticky top-0">
+    <div className="w-full p-3 bg-zinc-600 flex  items-center gap-1 sticky top-0">
       <div className="w-3 h-3 rounded-full bg-red-500" />
       <div className="w-3 h-3 rounded-full bg-yellow-500" />
       <div className="w-3 h-3 rounded-full bg-green-500" />
-      <span className="text-sm text-slate-200 font-semibold absolute left-[50%] -translate-x-[50%]">
+      <span className="text-sm text-slate-200 font-semibold absolute right-5 md:left-[50%] md:-translate-x-[50%]">
         <Link
           href="mailto: mohithkumar808@gmail.com"
           target="_blank"
