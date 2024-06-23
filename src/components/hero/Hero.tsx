@@ -1,6 +1,7 @@
 import Reveal from "../util/Reveal";
 import DotGrid from "./DotGrid";
 import { OutlineButton } from "../buttons/OutlineButton";
+import { sendGTMEvent } from "@next/third-parties/google";
 
 const Hero = () => {
   return (
@@ -34,6 +35,10 @@ const Hero = () => {
           <Reveal>
             <OutlineButton
               onClick={() => {
+                sendGTMEvent({
+                  event: "ContactClickedFromHero",
+                  value: "Clicked contact from hero ",
+                });
                 document.getElementById("contact")?.scrollIntoView();
               }}
               className="pointer-events-auto before:bg-rose-700 hover:text-white hover:border-rose-700 mt-4 bg-rose-500 text-zinc-100 border-rose-500 md:mt-6"
