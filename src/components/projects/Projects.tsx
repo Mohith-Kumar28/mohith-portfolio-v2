@@ -65,6 +65,7 @@ const projects = [
   {
     title: "Foozy",
     imgSrc: "/works/1.png",
+    ytVidSrc: "https://www.youtube.com/embed/ut6o6VbJG6I?si=VtTZBa_sIjNgOH2J",
     code: "",
     projectLink: "https://bit.ly/4aKGT4Y",
     tech: ["Food Pre Ordering Platform", "MERN Stack"],
@@ -116,6 +117,7 @@ const projects = [
   {
     title: "Motive Plugin",
     imgSrc: "/works/7.png",
+    ytVidSrc: "",
     code: "",
     projectLink:
       "https://marketplace.gomotive.com/app/tolltally-gps-based-instant-toll-billing",
@@ -172,6 +174,7 @@ const projects = [
   {
     title: "Arena",
     imgSrc: "/works/5.png",
+    ytVidSrc: "https://www.youtube.com/embed/zrjecqNwh_g?si=PPJ1i_dCmzb9ORF8",
     code: "",
     projectLink:
       "https://www.figma.com/design/1bUXpdtWCQg1LO5kWQ4mA1/Arena?t=ARcw1ZAq1GGxp1s6-0",
@@ -216,6 +219,7 @@ const projects = [
   {
     title: "Check It Out Media",
     imgSrc: "/works/8.png",
+    ytVidSrc: "https://www.youtube.com/embed/EnS9qqKbcDI?si=i2JTrxcWgdXYTwQO",
     code: "https://github.com/Mohith-Kumar28/check-it-out-media",
     projectLink: "https://whimsical-marzipan-26c215.netlify.app/",
     tech: ["Landing Page Development", "NextJS", "Framer Motion"],
@@ -260,6 +264,7 @@ const projects = [
   {
     title: "WhatTo",
     imgSrc: "/works/4.png",
+    ytVidSrc: "https://www.youtube.com/embed/vI3V1_1fRRg?si=Xs2Q_O32wzrr80PE",
     code: "https://github.com/Mohith-Kumar28/whatto",
     projectLink: "https://mohith28.pythonanywhere.com/",
     tech: ["Youtube Video Sharing Website", "Django"],
@@ -304,6 +309,7 @@ const projects = [
   {
     title: "United 270",
     imgSrc: "/works/6.png",
+    ytVidSrc: "https://www.youtube.com/embed/Semw6OT-48w?si=9QUE7V1b97DDHAnp",
     code: "https://www.github.com",
     projectLink: "https://sensational-paprenjak-71c246.netlify.app/",
     tech: ["Company Landing Page", "NextJS"],

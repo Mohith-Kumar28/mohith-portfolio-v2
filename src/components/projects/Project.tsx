@@ -12,6 +12,7 @@ interface Props {
   description: string;
   projectLink: string;
   imgSrc: string;
+  ytVidSrc: string;
   tech: string[];
   title: string;
   code: string;
@@ -22,6 +23,7 @@ export const Project = ({
   projectLink,
   description,
   imgSrc,
+  ytVidSrc,
   title,
   code,
   tech,
@@ -73,19 +75,31 @@ export const Project = ({
             }}
             className="w-[85%] absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/4 transition-all rounded"
           /> */}
-
-          <Image
-            src={imgSrc}
-            alt={`An image of the ${title} project.`}
-            layout="fill"
-            objectFit="cover"
-            quality={100}
-            className="w-[85%] absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/4 transition-all rounded hover:scale-90"
-            style={{
-              transformOrigin: "center",
-              transform: hovered ? "rotate(2deg)" : "none",
-            }}
-          />
+          {ytVidSrc && ytVidSrc != "" ? (
+            <iframe
+              // width="560"
+              // height="315"
+              className="w-full h-full transition-all rounded hover:scale-90 hover:-rotate-"
+              src={ytVidSrc}
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            ></iframe>
+          ) : (
+            <Image
+              src={imgSrc}
+              alt={`An image of the ${title} project.`}
+              layout="fill"
+              objectFit="cover"
+              quality={100}
+              className="w-[85%] absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/4 transition-all rounded hover:scale-90"
+              style={{
+                transformOrigin: "center",
+                transform: hovered ? "rotate(2deg)" : "none",
+              }}
+            />
+          )}
         </div>
         <div className="mt-6">
           <Reveal width="w-full">
