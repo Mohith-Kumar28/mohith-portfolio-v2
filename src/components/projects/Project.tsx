@@ -5,6 +5,7 @@ import { AiFillGithub, AiOutlineExport } from "react-icons/ai";
 import { ProjectModal } from "./ProjectModal";
 import Reveal from "../util/Reveal";
 import Image from "next/image";
+import { sendGTMEvent } from "@next/third-parties/google";
 
 interface Props {
   modalContent: JSX.Element;
@@ -57,7 +58,10 @@ export const Project = ({
         <div
           onMouseEnter={() => setHovered(true)}
           onMouseLeave={() => setHovered(false)}
-          onClick={() => setIsOpen(true)}
+          onClick={() => {
+            sendGTMEvent({ event: "ProjectModalOpened", value: { title } });
+            setIsOpen(true);
+          }}
           className="w-full aspect-video bg-zinc-700 cursor-pointer relative rounded-lg overflow-hidden"
         >
           {/* <img
@@ -85,19 +89,45 @@ export const Project = ({
         </div>
         <div className="mt-6">
           <Reveal width="w-full">
-            <Link href={projectLink} target="_blank" rel="nofollow">
-              <div className="flex items-center gap-2 w-full">
-                <h4 className="font-bold text-lg shrink-0 hover:underline decoration-dotted max-w-[calc(100%_-_150px)]">
-                  {title}
-                </h4>
-                <div className=" flex flex-grow h-[1px] bg-zinc-600" />
+            {/* <Link href={projectLink} target="_blank" rel="nofollow"> */}
+            <div className="flex items-center gap-2 w-full">
+              <h4
+                onClick={() => setIsOpen(true)}
+                className="font-bold text-lg shrink-0 hover:underline decoration-dotted max-w-[calc(100%_-_150px)] cursor-pointer"
+              >
+                {title}
+              </h4>
+              <div className=" flex flex-grow h-[1px] bg-zinc-600 mx-3" />
 
-                {/* <Link href={code} target="_blank" rel="nofollow">
-                <AiFillGithub className="text-xl text-zinc-300 hover:text-rose-300 transition-colors" />
-              </Link> */}
-                <AiOutlineExport className=" text-xl text-zinc-300 hover:text-rose-300 transition-colors" />
+              <div className="flex items-center gap-4 text-xl">
+                {code && code !== "" && (
+                  <Link
+                    target="_blank"
+                    rel="nofollow"
+                    className="text-zinc-300 hover:text-rose-300 transition-colors flex items-center gap-1"
+                    href={code}
+                  >
+                    <AiFillGithub />
+                  </Link>
+                )}
+                <Link
+                  target="_blank"
+                  rel="nofollow"
+                  className="text-zinc-300 hover:text-rose-300 transition-colors flex items-center gap-1"
+                  href={projectLink}
+                >
+                  <AiOutlineExport />
+                </Link>
               </div>
-            </Link>
+
+              {/* {code && code != "" && (
+                  <Link href={code} target="_blank" rel="nofollow">
+                    <AiFillGithub className="text-xl text-zinc-300 hover:text-rose-300 transition-colors" />
+                  </Link>
+                )}
+                <AiOutlineExport className=" text-xl text-zinc-300 hover:text-rose-300 transition-colors" /> */}
+            </div>
+            {/* </Link> */}
           </Reveal>
           <Reveal>
             <div className="flex flex-wrap gap-4 text-sm text-rose-300 my-2">

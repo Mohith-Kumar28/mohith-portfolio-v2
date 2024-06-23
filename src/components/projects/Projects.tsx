@@ -65,9 +65,8 @@ const projects = [
   {
     title: "Foozy",
     imgSrc: "/works/1.png",
-    code: "https://bit.ly/4aKGT4Y",
-    projectLink:
-      "https://www.canva.com/design/DAGEGToE2vc/iLsf3Tb1r4fyw6Peup7jZw/view?utm_content=DAGEGToE2vc&utm_campaign=designshare&utm_medium=link&utm_source=editor",
+    code: "",
+    projectLink: "https://bit.ly/4aKGT4Y",
     tech: ["Food Pre Ordering Platform", "MERN Stack"],
     description:
       "Hey there Ever had one of those ideas that felt too big to be real? That's exactly how Foozy started - as a wild dream in my college dorm room. Now, it's a real deal, using tech magic to make food ordering a breeze. Want to hear how we did it? Let's dive in!",
@@ -217,7 +216,7 @@ const projects = [
   {
     title: "Check It Out Media",
     imgSrc: "/works/8.png",
-    code: "https://github.com/yourusername/checkitoutmedialandingpage",
+    code: "https://github.com/Mohith-Kumar28/check-it-out-media",
     projectLink: "https://whimsical-marzipan-26c215.netlify.app/",
     tech: ["Landing Page Development", "NextJS", "Framer Motion"],
     description:
@@ -261,7 +260,7 @@ const projects = [
   {
     title: "WhatTo",
     imgSrc: "/works/4.png",
-    code: "https://www.github.com",
+    code: "https://github.com/Mohith-Kumar28/whatto",
     projectLink: "https://mohith28.pythonanywhere.com/",
     tech: ["Youtube Video Sharing Website", "Django"],
     description:

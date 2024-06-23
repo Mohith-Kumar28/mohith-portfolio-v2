@@ -38,10 +38,10 @@ export const ProjectModal = ({
 
   const content = (
     <div
-      className="fixed inset-0 z-50 px-4 py-12 bg-zinc-950/50 backdrop-blur overflow-y-scroll flex justify-center cursor-pointer"
+      className="fixed inset-0 z-50 px-4 py-12 bg-zinc-950/50 backdrop-blur-2xl overflow-y-scroll flex justify-center cursor-pointer"
       onClick={() => setIsOpen(false)}
     >
-      <button className="absolute top-4 md:top-6 text-xl right-4">
+      <button className="absolute top-4 md:top-6 text-2xl right-4">
         <MdClose />
       </button>
 
@@ -57,28 +57,21 @@ export const ProjectModal = ({
           alt={`An image of the ${title} project.`}
         />
         <div className="p-8">
-          <h4 className="text-3xl font-bold mb-2">{title}</h4>
-          <div className="flex flex-wrap gap-2 text-sm text-rose-300">
-            {tech.join(" - ")}
-          </div>
-
-          <div className="space-y-4 my-6 leading-relaxed text-sm text-zinc-300">
-            {modalContent}
-          </div>
-
-          <div>
+          <div className="mb-8">
             <p className="font-bold mb-2 text-xl">
               Project Links<span className="text-rose-500">.</span>
             </p>
             <div className="flex items-center gap-4 text-sm">
-              {/* <Link
-                target="_blank"
-                rel="nofollow"
-                className="text-zinc-300 hover:text-rose-300 transition-colors flex items-center gap-1"
-                href={code}
-              >
-                <AiFillGithub /> Source Code
-              </Link> */}
+              {code && code !== "" && (
+                <Link
+                  target="_blank"
+                  rel="nofollow"
+                  className="text-zinc-300 hover:text-rose-300 transition-colors flex items-center gap-1"
+                  href={code}
+                >
+                  <AiFillGithub /> Source Code
+                </Link>
+              )}
               <Link
                 target="_blank"
                 rel="nofollow"
@@ -88,6 +81,15 @@ export const ProjectModal = ({
                 <AiOutlineExport /> Live Project
               </Link>
             </div>
+          </div>
+
+          <h4 className="text-3xl font-bold mb-2">{title}</h4>
+          <div className="flex flex-wrap gap-2 text-sm text-rose-300">
+            {tech.join(" - ")}
+          </div>
+
+          <div className="space-y-4 my-6 leading-relaxed text-sm text-zinc-300">
+            {modalContent}
           </div>
         </div>
       </motion.div>
