@@ -10,7 +10,6 @@ export default function App({ Component, pageProps }: AppProps) {
       <GoogleTagManager
         gtmId={process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER || ""}
       />
-
       <Component {...pageProps} />
     </>
   );
