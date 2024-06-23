@@ -4,12 +4,14 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { AiFillGithub, AiOutlineExport } from "react-icons/ai";
 import { MdClose } from "react-icons/md";
+import Image from "next/image";
 
 interface Props {
   isOpen: boolean;
   setIsOpen: Function;
   title: string;
   imgSrc: string;
+  ytVidSrc: string;
   code: string;
   projectLink: string;
   tech: string[];
@@ -21,6 +23,7 @@ export const ProjectModal = ({
   projectLink,
   setIsOpen,
   imgSrc,
+  ytVidSrc,
   isOpen,
   title,
   code,
@@ -51,11 +54,37 @@ export const ProjectModal = ({
         onClick={(e) => e.stopPropagation()}
         className="w-full max-w-2xl h-fit rounded-lg overflow-hidden bg-zinc-900 shadow-lg cursor-auto"
       >
-        <img
+        {/* <img
           className="w-full"
           src={imgSrc}
           alt={`An image of the ${title} project.`}
-        />
+        /> */}
+
+        {ytVidSrc && ytVidSrc != "" ? (
+          <iframe
+            // width="560"
+            // height="315"
+            src={ytVidSrc}
+            className="w-full h-96"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          ></iframe>
+        ) : (
+          <Image
+            src={imgSrc}
+            alt={`An image of the ${title} project.`}
+            layout="fill"
+            objectFit="cover"
+            quality={100}
+            className="w-[85%] absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/4 transition-all rounded hover:scale-90"
+            style={{
+              transformOrigin: "center",
+            }}
+          />
+        )}
+
         <div className="p-8">
           <div className="mb-8">
             <p className="font-bold mb-2 text-xl">

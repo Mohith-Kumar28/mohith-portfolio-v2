@@ -56,14 +56,15 @@ export const Project = ({
         initial="hidden"
         animate={controls}
         transition={{ duration: 0.75 }}
+        onClick={() => {
+          sendGTMEvent({ event: "ProjectModalOpened", value: { title } });
+          setIsOpen(true);
+        }}
+        className="cursor-pointer bg-zinc-800 transition-all  hover:outline  p-6 rounded-lg"
       >
         <div
           onMouseEnter={() => setHovered(true)}
           onMouseLeave={() => setHovered(false)}
-          onClick={() => {
-            sendGTMEvent({ event: "ProjectModalOpened", value: { title } });
-            setIsOpen(true);
-          }}
           className="w-full aspect-video bg-zinc-700 cursor-pointer relative rounded-lg overflow-hidden"
         >
           {/* <img
@@ -79,7 +80,7 @@ export const Project = ({
             <iframe
               // width="560"
               // height="315"
-              className="w-full h-full transition-all rounded hover:scale-90 hover:-rotate-"
+              className="w-full h-full transition-all rounded hover:scale-90 "
               src={ytVidSrc}
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -167,6 +168,7 @@ export const Project = ({
         setIsOpen={setIsOpen}
         isOpen={isOpen}
         imgSrc={imgSrc}
+        ytVidSrc={ytVidSrc}
         title={title}
         code={code}
         tech={tech}
