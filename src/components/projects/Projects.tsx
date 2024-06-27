@@ -66,7 +66,7 @@ const projects = [
     title: "Foozy",
     imgSrc: "/works/1.png",
     ytVidSrc:
-      "https://www.youtube.com/embed/ut6o6VbJG6I?si=VtTZBa_sIjNgOH2J&autoPlay=1&muted=1",
+      "https://www.youtube.com/embed/ut6o6VbJG6I?si=VtTZBa_sIjNgOH2J&autoplay=1&mute=1",
     code: "",
     projectLink: "https://bit.ly/4aKGT4Y",
     tech: ["Food Pre Ordering Platform", "MERN Stack"],
@@ -120,7 +120,7 @@ const projects = [
     title: "Arena",
     imgSrc: "/works/5.png",
     ytVidSrc:
-      "https://www.youtube.com/embed/zrjecqNwh_g?si=PPJ1i_dCmzb9ORF8&autoPlay=1&muted=1",
+      "https://www.youtube.com/embed/zrjecqNwh_g?si=PPJ1i_dCmzb9ORF8&autoplay=1&mute=1",
     code: "",
     projectLink:
       "https://www.figma.com/design/1bUXpdtWCQg1LO5kWQ4mA1/Arena?t=ARcw1ZAq1GGxp1s6-0",
@@ -166,7 +166,7 @@ const projects = [
     title: "Check It Out Media",
     imgSrc: "/works/8.png",
     ytVidSrc:
-      "https://www.youtube.com/embed/EnS9qqKbcDI?si=i2JTrxcWgdXYTwQO&autoPlay=1&muted=1",
+      "https://www.youtube.com/embed/EnS9qqKbcDI?si=i2JTrxcWgdXYTwQO&autoplay=1&mute=1",
     code: "https://github.com/Mohith-Kumar28/check-it-out-media",
     projectLink: "https://whimsical-marzipan-26c215.netlify.app/",
     tech: ["Landing Page Development", "NextJS", "Framer Motion"],
