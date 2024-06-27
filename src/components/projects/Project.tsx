@@ -60,12 +60,12 @@ export const Project = ({
           sendGTMEvent({ event: "ProjectModalOpened", value: { title } });
           setIsOpen(true);
         }}
-        className="cursor-pointer bg-zinc-800 transition-all  hover:outline  p-6 rounded-lg"
+        className="cursor-pointer  bg-zinc-800 transition-all   hover:outline  p-6 rounded-lg"
       >
         <div
           onMouseEnter={() => setHovered(true)}
           onMouseLeave={() => setHovered(false)}
-          className="w-full aspect-video bg-zinc-700 cursor-pointer relative rounded-lg overflow-hidden"
+          className="w-full aspect-video  bg-zinc-700 cursor-pointer relative rounded-lg overflow-hidden"
         >
           {/* <img
             src={imgSrc}
