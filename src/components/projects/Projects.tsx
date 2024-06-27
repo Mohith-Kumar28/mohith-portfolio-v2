@@ -268,7 +268,8 @@ const projects = [
   {
     title: "WhatTo",
     imgSrc: "/works/4.png",
-    ytVidSrc: "https://www.youtube.com/embed/vI3V1_1fRRg?si=Xs2Q_O32wzrr80PE",
+    ytVidSrc:
+      "https://www.youtube.com/embed/vI3V1_1fRRg?si=Xs2Q_O32wzrr80PE&autoplay=1&mute=1&playlist=vI3V1_1fRRg&loop=1",
     code: "https://github.com/Mohith-Kumar28/whatto",
     projectLink: "https://mohith28.pythonanywhere.com/",
     tech: ["Youtube Video Sharing Website", "Django"],
@@ -313,7 +314,8 @@ const projects = [
   {
     title: "United 270",
     imgSrc: "/works/6.png",
-    ytVidSrc: "https://www.youtube.com/embed/Semw6OT-48w?si=9QUE7V1b97DDHAnp",
+    ytVidSrc:
+      "https://www.youtube.com/embed/Semw6OT-48w?si=9QUE7V1b97DDHAnp&autoplay=1&mute=1&playlist=Semw6OT-48w&loop=1",
     code: "https://www.github.com",
     projectLink: "https://sensational-paprenjak-71c246.netlify.app/",
     tech: ["Company Landing Page", "NextJS"],
