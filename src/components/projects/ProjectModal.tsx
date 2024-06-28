@@ -72,17 +72,18 @@ export const ProjectModal = ({
             allowFullScreen
           ></iframe>
         ) : (
-          <Image
-            src={imgSrc}
-            alt={`An image of the ${title} project.`}
-            layout="fill"
-            objectFit="cover"
-            quality={100}
-            className="w-[85%] absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/4 transition-all rounded hover:scale-90"
-            style={{
-              transformOrigin: "center",
-            }}
-          />
+          <div className="w-full h-96 relative">
+            <Image
+              src={imgSrc}
+              alt={`An image of the ${title} project.`}
+              layout="fill"
+              objectFit="cover"
+              className=""
+              style={{
+                transformOrigin: "center",
+              }}
+            />
+          </div>
         )}
 
         <div className="p-8">
