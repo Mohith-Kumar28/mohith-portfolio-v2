@@ -15,7 +15,7 @@ export const Experience = () => {
 const experience = [
   {
     title: "MapUp",
-    position: "Frontend Developer",
+    position: "Fullstack Developer",
     time: "Aug 2023 - Present",
     location: "Remote",
     description:
@@ -33,7 +33,7 @@ const experience = [
   },
   {
     title: "Foozy",
-    position: "My startup",
+    position: "Fullstack Developer",
     time: "Aug 2022 - Jul 2023",
     location: "LPU, Punjab",
     description:

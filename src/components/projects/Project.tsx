@@ -6,6 +6,7 @@ import { ProjectModal } from "./ProjectModal";
 import Reveal from "../util/Reveal";
 import Image from "next/image";
 import { sendGTMEvent } from "@next/third-parties/google";
+import { Chip } from "../util/Chip";
 
 interface Props {
   modalContent: JSX.Element;
@@ -131,6 +132,7 @@ export const Project = ({
                   className="text-zinc-300 hover:text-rose-300 transition-colors flex items-center gap-1"
                   href={projectLink}
                 >
+                  <span className="text-base mr-1"> Live project </span>{" "}
                   <AiOutlineExport />
                 </Link>
               </div>
@@ -147,6 +149,7 @@ export const Project = ({
           <Reveal>
             <div className="flex flex-wrap gap-4 text-sm text-rose-300 my-2">
               {tech.join(" - ")}
+              {/* {tech[0]} */}
             </div>
           </Reveal>
           <Reveal>
@@ -160,6 +163,14 @@ export const Project = ({
               </span>
             </p>
           </Reveal>
+
+          {/* <Reveal>
+            <div className="flex flex-wrap gap-2 mt-4">
+              {tech.map((techName) => (
+                <Chip key={techName}>{techName}</Chip>
+              ))}
+            </div>
+          </Reveal> */}
         </div>
       </motion.div>
       <ProjectModal

@@ -36,14 +36,14 @@ const Hero = () => {
             <OutlineButton
               onClick={() => {
                 sendGTMEvent({
-                  event: "ContactClickedFromHero",
-                  value: "Clicked contact from hero ",
+                  event: "ContactProjectsFromHero",
+                  value: "Clicked projects from hero ",
                 });
-                document.getElementById("contact")?.scrollIntoView();
+                document.getElementById("projects")?.scrollIntoView();
               }}
               className="pointer-events-auto before:bg-rose-700 hover:text-white hover:border-rose-700 mt-4 bg-rose-500 text-zinc-100 border-rose-500 md:mt-6"
             >
-              Contact Me
+              View Projects
             </OutlineButton>
           </Reveal>
         </div>
