@@ -60,4 +60,18 @@ const experience = [
       "Collaborated with various clients across various industries. Leveraged strong communication skills and design expertise to exceed expectations and deliver exceptional results. Remained up-to-date with the latest design trends to provide innovative solutions.",
     tech: ["Figma", "Wordpress", "Canva", "Product Management"],
   },
+  {
+    title: "NexCart",
+    position: "Part Time",
+    time: "Jul 2021 - Mar 2022",
+    location: "Remote",
+    description:
+      "Developed a web application to display dashboard data received from over 2000 shopkeepers associated with NexCart. Using ReactJS, I created an admin dashboard with a responsive and user-friendly interface. Additionally, I implemented Apex charts and React Lightweight charts to create interactive charts and graphs.",
+    tech: [
+      "ReactJS",
+      "Responsive Design",
+      "Data Visualization",
+      "Dashboard Development",
+    ],
+  },
 ];
