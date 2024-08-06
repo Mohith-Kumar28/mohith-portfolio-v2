@@ -365,16 +365,6 @@ const projects = [
 export const miniProjects = [
   {
     img: "",
-    name: "WhatTo",
-    description: "",
-    live_link: "https://mohith28.pythonanywhere.com/",
-    github_link: "https://github.com/Mohith-Kumar28/whatto",
-    skills: ["Youtube Video Sharing Website", "Django"],
-    live_icon: "/assets/icons/figmaIcon.png",
-  },
-
-  {
-    img: "",
     name: "Foozy UI/UX",
     description: "",
     live_link: "https://bit.ly/3JSF9eS",
@@ -401,6 +391,15 @@ export const miniProjects = [
     github_link: "",
     skills: ["Canva"],
     live_icon: "",
+  },
+  {
+    img: "",
+    name: "WhatTo",
+    description: "",
+    live_link: "https://mohith28.pythonanywhere.com/",
+    github_link: "https://github.com/Mohith-Kumar28/whatto",
+    skills: ["Youtube Video Sharing Website", "Django"],
+    live_icon: "/assets/icons/figmaIcon.png",
   },
   {
     img: "",
