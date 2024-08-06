@@ -168,7 +168,7 @@ const projects = [
     ytVidSrc:
       "https://www.youtube.com/embed/EnS9qqKbcDI?si=i2JTrxcWgdXYTwQO&autoplay=1&mute=1&playlist=EnS9qqKbcDI&loop=1",
     code: "https://github.com/Mohith-Kumar28/check-it-out-media",
-    projectLink: "https://whimsical-marzipan-26c215.netlify.app/",
+    projectLink: "https://checkitoutmedia.in/",
     tech: ["Landing Page Development", "NextJS", "Framer Motion"],
     description:
       "Embarked on a creative journey to elevate Check It Out Media's online presence with a sleek, engaging landing page. Leveraging NextJS for rapid development and Framer Motion for dynamic animations, I crafted a digital showcase that encapsulates their unique brand essence.",
@@ -265,104 +265,114 @@ const projects = [
       </>
     ),
   },
-  {
-    title: "WhatTo",
-    imgSrc: "/works/4.png",
-    ytVidSrc:
-      "https://www.youtube.com/embed/vI3V1_1fRRg?si=Xs2Q_O32wzrr80PE&autoplay=1&mute=1&playlist=vI3V1_1fRRg&loop=1",
-    code: "https://github.com/Mohith-Kumar28/whatto",
-    projectLink: "https://mohith28.pythonanywhere.com/",
-    tech: ["Youtube Video Sharing Website", "Django"],
-    description:
-      "From Zero to One: Back in my second year of college, I decided to dive into the world of web development with a bang. My project, built with Django, was a simple platform for sharing YouTube video recommendations. It wasn't perfect, but it was a huge step for me, teaching me a ton and giving me the confidence to tackle bigger challenges. Let's take a trip down memory lane to see how this project shaped my journey.",
-    modalContent: (
-      <>
-        <p>
-          During my second year of college, I embarked on my first full-stack
-          project, a small but mighty endeavor to build a platform that let
-          users share their favorite YouTube videos. Using Django, a Python
-          framework, I learned the ropes of web development, from setting up the
-          backend to making sure everything looked good on the frontend. It was
-          a bit rough around the edges, and I definitely had a lot to learn, but
-          it was a massive leap for me.
-        </p>{" "}
-        <p>
-          I started by figuring out how to use Django to create a basic website.
-          It was a steep learning curve, but I tackled it head-on, diving deep
-          into tutorials and forums to understand how to make my project work.
-          Along the way, I learned about databases, user authentication, and how
-          to make my website look nice and function smoothly.
-        </p>{" "}
-        <p>
-          Even though the project wasn't polished or particularly
-          groundbreaking, it was a huge confidence booster for me. It showed me
-          that I could learn new technologies and apply them to create something
-          tangible. It also taught me the importance of persistence and the
-          willingness to ask for help when I needed it.
-        </p>{" "}
-        <p>
-          Looking back, I see that my first full-stack application was a crucial
-          stepping stone in my journey as a developer. It wasn't about creating
-          a perfect product; it was about the process of learning,
-          experimenting, and overcoming challenges. It taught me that every
-          failure is an opportunity to learn and grow, and that with dedication
-          and curiosity, I could achieve anything I set my mind to.
-        </p>
-      </>
-    ),
-  },
-  {
-    title: "United 270",
-    imgSrc: "/works/6.png",
-    ytVidSrc:
-      "https://www.youtube.com/embed/Semw6OT-48w?si=9QUE7V1b97DDHAnp&autoplay=1&mute=1&playlist=Semw6OT-48w&loop=1",
-    code: "https://www.github.com",
-    projectLink: "https://sensational-paprenjak-71c246.netlify.app/",
-    tech: ["Company Landing Page", "NextJS"],
-    description:
-      "Let's talk about a project that was a real headache from start to finish. Dealing with a client who was impossible to please, I pushed through to completion, only to end up with a website that was far from what I'd hoped for. It was a tough pill to swallow, but this experience taught me a lot about people management and when to trust my gut. Here's the story of how I learned to say no and stand my ground.",
-    modalContent: (
-      <>
-        <p>
-          This project was a nightmare. From the get-go, the client was
-          demanding and unreasonable, constantly changing their mind and
-          expecting miracles. Despite the stress and the constant tug-of-war, I
-          managed to deliver a website that met their specifications. But the
-          result? A poorly designed, slow-loading mess that reflected the
-          client's lack of vision rather than my abilities.
-        </p>{" "}
-        <p>
-          Now, you might wonder why I'm keeping this project in my portfolio.
-          The honest truth is, it's a reminder of a hard lesson learned. It
-          taught me that not all clients are worth the struggle, and sometimes,
-          it's better to walk away. More importantly, it showed me the
-          importance of trusting my own judgment and standing firm when faced
-          with unreasonable demands.
-        </p>{" "}
-        <p>
-          Looking back, I realize that this project was a critical turning
-          point. It forced me to confront the realities of working with
-          difficult clients and made me stronger in the process. It taught me
-          the value of setting boundaries and prioritizing projects that align
-          with my values and capabilities. While it's not a project I'm proud to
-          showcase, it's a story that I believe adds depth to my portfolio by
-          illustrating my resilience and growth as a professional.
-        </p>{" "}
-        <p>
-          In essence, this project was a wake-up call. It taught me that not
-          every challenge is worth the fight, and sometimes, the best decision
-          is to say no. It's a lesson I've carried forward in my career,
-          influencing how I choose my projects and interact with clients. Even
-          though it was a tough chapter, it's a part of my journey that I won't
-          forget, as it shaped me into a more discerning and assertive
-          professional.
-        </p>
-      </>
-    ),
-  },
+  // {
+  //   title: "WhatTo",
+  //   imgSrc: "/works/4.png",
+  //   ytVidSrc:
+  //     "https://www.youtube.com/embed/vI3V1_1fRRg?si=Xs2Q_O32wzrr80PE&autoplay=1&mute=1&playlist=vI3V1_1fRRg&loop=1",
+  //   code: "https://github.com/Mohith-Kumar28/whatto",
+  //   projectLink: "https://mohith28.pythonanywhere.com/",
+  //   tech: ["Youtube Video Sharing Website", "Django"],
+  //   description:
+  //     "From Zero to One: Back in my second year of college, I decided to dive into the world of web development with a bang. My project, built with Django, was a simple platform for sharing YouTube video recommendations. It wasn't perfect, but it was a huge step for me, teaching me a ton and giving me the confidence to tackle bigger challenges. Let's take a trip down memory lane to see how this project shaped my journey.",
+  //   modalContent: (
+  //     <>
+  //       <p>
+  //         During my second year of college, I embarked on my first full-stack
+  //         project, a small but mighty endeavor to build a platform that let
+  //         users share their favorite YouTube videos. Using Django, a Python
+  //         framework, I learned the ropes of web development, from setting up the
+  //         backend to making sure everything looked good on the frontend. It was
+  //         a bit rough around the edges, and I definitely had a lot to learn, but
+  //         it was a massive leap for me.
+  //       </p>{" "}
+  //       <p>
+  //         I started by figuring out how to use Django to create a basic website.
+  //         It was a steep learning curve, but I tackled it head-on, diving deep
+  //         into tutorials and forums to understand how to make my project work.
+  //         Along the way, I learned about databases, user authentication, and how
+  //         to make my website look nice and function smoothly.
+  //       </p>{" "}
+  //       <p>
+  //         Even though the project wasn't polished or particularly
+  //         groundbreaking, it was a huge confidence booster for me. It showed me
+  //         that I could learn new technologies and apply them to create something
+  //         tangible. It also taught me the importance of persistence and the
+  //         willingness to ask for help when I needed it.
+  //       </p>{" "}
+  //       <p>
+  //         Looking back, I see that my first full-stack application was a crucial
+  //         stepping stone in my journey as a developer. It wasn't about creating
+  //         a perfect product; it was about the process of learning,
+  //         experimenting, and overcoming challenges. It taught me that every
+  //         failure is an opportunity to learn and grow, and that with dedication
+  //         and curiosity, I could achieve anything I set my mind to.
+  //       </p>
+  //     </>
+  //   ),
+  // },
+  // {
+  //   title: "United 270",
+  //   imgSrc: "/works/6.png",
+  //   ytVidSrc:
+  //     "https://www.youtube.com/embed/Semw6OT-48w?si=9QUE7V1b97DDHAnp&autoplay=1&mute=1&playlist=Semw6OT-48w&loop=1",
+  //   code: "https://www.github.com",
+  //   projectLink: "https://sensational-paprenjak-71c246.netlify.app/",
+  //   tech: ["Company Landing Page", "NextJS"],
+  //   description:
+  //     "Let's talk about a project that was a real headache from start to finish. Dealing with a client who was impossible to please, I pushed through to completion, only to end up with a website that was far from what I'd hoped for. It was a tough pill to swallow, but this experience taught me a lot about people management and when to trust my gut. Here's the story of how I learned to say no and stand my ground.",
+  //   modalContent: (
+  //     <>
+  //       <p>
+  //         This project was a nightmare. From the get-go, the client was
+  //         demanding and unreasonable, constantly changing their mind and
+  //         expecting miracles. Despite the stress and the constant tug-of-war, I
+  //         managed to deliver a website that met their specifications. But the
+  //         result? A poorly designed, slow-loading mess that reflected the
+  //         client's lack of vision rather than my abilities.
+  //       </p>{" "}
+  //       <p>
+  //         Now, you might wonder why I'm keeping this project in my portfolio.
+  //         The honest truth is, it's a reminder of a hard lesson learned. It
+  //         taught me that not all clients are worth the struggle, and sometimes,
+  //         it's better to walk away. More importantly, it showed me the
+  //         importance of trusting my own judgment and standing firm when faced
+  //         with unreasonable demands.
+  //       </p>{" "}
+  //       <p>
+  //         Looking back, I realize that this project was a critical turning
+  //         point. It forced me to confront the realities of working with
+  //         difficult clients and made me stronger in the process. It taught me
+  //         the value of setting boundaries and prioritizing projects that align
+  //         with my values and capabilities. While it's not a project I'm proud to
+  //         showcase, it's a story that I believe adds depth to my portfolio by
+  //         illustrating my resilience and growth as a professional.
+  //       </p>{" "}
+  //       <p>
+  //         In essence, this project was a wake-up call. It taught me that not
+  //         every challenge is worth the fight, and sometimes, the best decision
+  //         is to say no. It's a lesson I've carried forward in my career,
+  //         influencing how I choose my projects and interact with clients. Even
+  //         though it was a tough chapter, it's a part of my journey that I won't
+  //         forget, as it shaped me into a more discerning and assertive
+  //         professional.
+  //       </p>
+  //     </>
+  //   ),
+  // },
 ];
 
 export const miniProjects = [
+  {
+    img: "",
+    name: "WhatTo",
+    description: "",
+    live_link: "https://mohith28.pythonanywhere.com/",
+    github_link: "https://github.com/Mohith-Kumar28/whatto",
+    skills: ["Youtube Video Sharing Website", "Django"],
+    live_icon: "/assets/icons/figmaIcon.png",
+  },
+
   {
     img: "",
     name: "Foozy UI/UX",
@@ -372,14 +382,44 @@ export const miniProjects = [
     skills: ["Figma", "User_Interface", "User_Experience"],
     live_icon: "/assets/icons/figmaIcon.png",
   },
+
+  {
+    img: "",
+    name: "Mystic Beauty",
+    description: "",
+    live_link: "https://jovial-cassata-5ed7db.netlify.app/",
+    github_link: "https://github.com/Mohith-Kumar28/cosmetics_website",
+    skills: ["NextJS", "TailwindCSS"],
+    live_icon: "",
+  },
+  {
+    img: "",
+    name: "Menu Design",
+    description: "",
+    live_link:
+      "https://www.canva.com/design/DAGHSuPooJo/PTsslNYY5dFihgqNQVj_eQ/edit?utm_content=DAGHSuPooJo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+    github_link: "",
+    skills: ["Canva"],
+    live_icon: "",
+  },
   {
     img: "",
     name: "ST.Augustine hospital landing page",
     description: "",
-    live_link: "https://bit.ly/3IPaCgX",
+    live_link: "https://staugustinehospital.in/",
     github_link:
       "https://github.com/Mohith-Kumar28/saint_augustine_hospital_website",
     skills: ["NextJS", "TailwindCSS"],
+    live_icon: "",
+  },
+
+  {
+    img: "",
+    name: "Hospital Dashboard Frontend",
+    description: "",
+    live_link: "https://deluxe-otter-66505b.netlify.app/",
+    github_link: "https://github.com/Mohith-Kumar28/coalition-assessment",
+    skills: ["NextJS", "TailwindCSS", "ChartJS"],
     live_icon: "",
   },
 
@@ -394,27 +434,37 @@ export const miniProjects = [
   },
   {
     img: "",
-    name: "Globe Quest",
+    name: "GlobeQuest",
     description: "",
-    live_link: "https://bit.ly/43U9DEz",
+    live_link: "https://effervescent-dusk-3d99e2.netlify.app/",
     github_link: "https://github.com/Mohith-Kumar28/mapup_assignment",
-    skills: ["NextJS", "TailwindCSS", "Google Maps", "Redux"],
+    skills: ["NextJS", "Google maps", "Redux"],
     live_icon: "",
   },
   {
     img: "",
-    name: "Oakley",
+    name: "United 270 Landing page",
     description: "",
-    live_link: "https://bit.ly/3XK4ld7",
-    github_link: "https://github.com/Mohith-Kumar28/Realestate-project",
+    live_link: "https://sensational-paprenjak-71c246.netlify.app/",
+    github_link: "https://sensational-paprenjak-71c246.netlify.app/",
+    skills: ["Company Landing Page", "NextJS"],
+    live_icon: "/assets/icons/figmaIcon.png",
+  },
+  {
+    img: "",
+    name: "Fernhilt",
+    description: "",
+    live_link: "https://endearing-paprenjak-587836.netlify.app/",
+    github_link: "https://github.com/Mohith-Kumar28/aichatbot-website-landing",
     skills: ["NextJS", "TailwindCSS"],
     live_icon: "",
   },
+
   {
     img: "",
     name: "SpaceXplorer",
     description: "",
-    live_link: "https://bit.ly/3Ohdvuv",
+    live_link: "https://curious-raindrop-a4b0be.netlify.app/",
     github_link: "https://github.com/Mohith-Kumar28/spacex_visualization",
     skills: ["NextJS", "Redux"],
     live_icon: "",
@@ -423,43 +473,18 @@ export const miniProjects = [
     img: "",
     name: "TouchSky",
     description: "",
-    live_link: "https://bit.ly/43eZIZS",
+    live_link: "https://jade-daffodil-acbb84.netlify.app/",
     github_link: "https://github.com/Mohith-Kumar28/jobs_website",
     skills: ["NextJS", "TailwindCSS"],
     live_icon: "",
   },
+
   {
     img: "",
-    name: "Boujee",
+    name: "Sellular UI/UX contribution",
     description: "",
-    live_link: "https://bit.ly/3ri9zAT",
-    github_link: "https://github.com/Mohith-Kumar28/data_website",
-    skills: ["NextJS", "TailwindCSS"],
-    live_icon: "",
-  },
-  {
-    img: "",
-    name: "Mystic Beauty",
-    description: "",
-    live_link: "https://bit.ly/3QgYI4H",
-    github_link: "https://github.com/Mohith-Kumar28/cosmetics_website",
-    skills: ["NextJS", "TailwindCSS"],
-    live_icon: "",
-  },
-  {
-    img: "",
-    name: "Menu Design",
-    description: "",
-    live_link: "https://bit.ly/43iOLXh",
-    github_link: "",
-    skills: ["Canva"],
-    live_icon: "",
-  },
-  {
-    img: "",
-    name: "UI/UX contribution",
-    description: "",
-    live_link: "https://bit.ly/46GZlKA",
+    live_link:
+      "https://www.figma.com/design/RinXSO5od6RLCAG0RUWLrE/my_sellular_work?node-id=0-1",
     github_link: "",
     skills: ["Figma"],
     live_icon: "",
@@ -469,7 +494,7 @@ export const miniProjects = [
     name: "Trained AI Gpt API",
     description: "",
     live_link: "",
-    github_link: "https://bit.ly/43Rh2V0",
+    github_link: "https://github.com/Mohith-Kumar28/fast_api_gpt",
     skills: ["Python", "Fast API", "Lamma-2", "OpenAI"],
     live_icon: "",
   },
@@ -477,7 +502,7 @@ export const miniProjects = [
     img: "",
     name: "Old Portfolio Website",
     description: "",
-    live_link: "https://www.mohith.in/",
+    live_link: "https://my-portfolio-two-gamma-53.vercel.app/",
     github_link: "https://github.com/Mohith-Kumar28/my_portfolio",
     skills: ["NextJS", "TailwindCSS", "Lamma-2", "LangChain", "OpenAI API"],
     live_icon: "",
