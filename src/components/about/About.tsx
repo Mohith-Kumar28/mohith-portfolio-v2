@@ -49,7 +49,9 @@ export const About = () => {
 
         <Stats />
       </div>
-      <DotGrid />
+      <div className="hidden md:block">
+        <DotGrid />
+      </div>
     </section>
   );
 };
