@@ -110,12 +110,13 @@ const SocialsBlock = () => (
       }}
       className="col-span-6 bg-blue-500 md:col-span-3 "
     >
-      <LinkPreview
-        url="https://www.linkedin.com/in/mohith-kumar-chaluvadi/"
+      <Link
+        href="https://www.linkedin.com/in/mohith-kumar-chaluvadi/"
+        target="_blank"
         className="grid h-full place-content-center text-3xl text-white"
       >
         <SiLinkedin />
-      </LinkPreview>
+      </Link>
     </Block>
     <Block
       whileHover={{
@@ -124,12 +125,13 @@ const SocialsBlock = () => (
       }}
       className="col-span-6 bg-gray-700 md:col-span-3"
     >
-      <LinkPreview
-        url="https://github.com/Mohith-Kumar28"
+      <Link
+        href="https://github.com/Mohith-Kumar28"
+        target="_blank"
         className="grid h-full place-content-center text-3xl text-white"
       >
         <SiGithub />
-      </LinkPreview>
+      </Link>
     </Block>
     <Block
       whileHover={{
@@ -190,46 +192,56 @@ const LocationBlock = () => (
 const EmailListBlock = () => (
   <Block className="col-span-12 md:col-span-9">
     <div className="flex flex-wrap justify-between gap-6 align-middle flex-grow">
-      <div className="bg-gray-500 border-2 border-gray-400 rounded-full p-3">
-        <Image
-          alt="Nextjs logo"
-          src={"/tech/Next.svg"}
-          width={50}
-          height={50}
-        />
-      </div>
-      <div className="bg-gray-500 border-2 border-gray-400 rounded-full p-3">
-        <Image
-          alt="Reach logo"
-          src={"/tech/React.svg"}
-          width={50}
-          height={50}
-        />
-      </div>
-      <div className="bg-gray-500 border-2 border-gray-400 rounded-full p-3">
-        <Image
-          alt="Express logo"
-          src={"/tech/Express.svg"}
-          width={50}
-          height={50}
-        />
-      </div>
-      <div className="bg-gray-500 border-2 border-gray-400 rounded-full p-3">
-        <Image
-          alt="MongoDB logo"
-          src={"/tech/MongoDB.svg"}
-          width={50}
-          height={50}
-        />
-      </div>
-      <div className="bg-gray-500 border-2 border-gray-400 rounded-full p-3">
-        <Image
-          alt="Figma logo"
-          src={"/tech/Figma.svg"}
-          width={50}
-          height={50}
-        />
-      </div>
+      <LinkPreview url="https://nextjs.org/">
+        <div className="bg-gray-500 border-2 border-gray-400 rounded-full p-3">
+          <Image
+            alt="Nextjs logo"
+            src={"/tech/Next.svg"}
+            width={50}
+            height={50}
+          />
+        </div>
+      </LinkPreview>
+      <LinkPreview url="https://react.dev/">
+        <div className="bg-gray-500 border-2 border-gray-400 rounded-full p-3">
+          <Image
+            alt="Reach logo"
+            src={"/tech/React.svg"}
+            width={50}
+            height={50}
+          />
+        </div>
+      </LinkPreview>
+      <LinkPreview url="https://expressjs.com/">
+        <div className="bg-gray-500 border-2 border-gray-400 rounded-full p-3">
+          <Image
+            alt="Express logo"
+            src={"/tech/Express.svg"}
+            width={50}
+            height={50}
+          />
+        </div>
+      </LinkPreview>
+      <LinkPreview url="https://www.mongodb.com/">
+        <div className="bg-gray-500 border-2 border-gray-400 rounded-full p-3">
+          <Image
+            alt="MongoDB logo"
+            src={"/tech/MongoDB.svg"}
+            width={50}
+            height={50}
+          />
+        </div>
+      </LinkPreview>
+      <LinkPreview url="https://www.figma.com/about/">
+        <div className="bg-gray-500 border-2 border-gray-400 rounded-full p-3">
+          <Image
+            alt="Figma logo"
+            src={"/tech/Figma.svg"}
+            width={50}
+            height={50}
+          />
+        </div>
+      </LinkPreview>
     </div>
   </Block>
 );
