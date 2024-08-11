@@ -111,7 +111,7 @@ const SocialsBlock = () => (
       className="col-span-6 bg-blue-500 md:col-span-3 "
     >
       <LinkPreview
-        url="https://bit.ly/3Yj6jBy"
+        url="https://www.linkedin.com/in/mohith-kumar-chaluvadi/"
         className="grid h-full place-content-center text-3xl text-white"
       >
         <SiLinkedin />
@@ -125,7 +125,7 @@ const SocialsBlock = () => (
       className="col-span-6 bg-gray-700 md:col-span-3"
     >
       <LinkPreview
-        url="https://bit.ly/3Ylzsw7"
+        url="https://github.com/Mohith-Kumar28"
         className="grid h-full place-content-center text-3xl text-white"
       >
         <SiGithub />
