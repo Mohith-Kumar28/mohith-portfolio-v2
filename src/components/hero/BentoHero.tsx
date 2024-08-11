@@ -11,7 +11,7 @@ import { LinkPreview } from "../util/link-preview";
 
 export const BentoHero = () => {
   return (
-    <div id="about" className="min-h-screen bg-zinc-900  py-12 text-zinc-50">
+    <div id="about" className="min-h-screen bg-zinc-900  py-6 text-zinc-50">
       <motion.div
         initial="initial"
         animate="animate"
@@ -79,7 +79,7 @@ const HeaderBlock = () => (
         className="object-cover"
       />
     </div>
-    <h1 className="mb-12 text-4xl font-medium leading-tight">
+    <h1 className="mb6 text-4xl font-medium leading-tight">
       Hi, I'm Mohith<span className="text-rose-500">.</span>{" "}
       <span className="text-zinc-400">
         I build cool websites like this one.
@@ -169,8 +169,8 @@ const AboutBlock = () => (
       Crafting digital masterpieces, one line at a time. With{" "}
       <span className="text-white"> 2+ years</span> of experience building web
       based solutions, and a passion for{" "}
-      <span className="text-white"> UI/UX</span>, I bring a unique blend of
-      technical strength and creative flair.
+      <span className="text-white"> UI/UX</span>, I bring a blend of technical
+      strength and creative flair.
     </p>
   </Block>
 );
