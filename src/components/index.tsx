@@ -7,6 +7,7 @@ import { Projects } from "./projects/Projects";
 import { Experience } from "./experience/Experience";
 import { Contact } from "./contact/Contact";
 import ContactForm from "./contact/ContactForm";
+import { BentoHero } from "./hero/BentoHero";
 
 export const HomPage = () => {
   return (
@@ -15,6 +16,7 @@ export const HomPage = () => {
       <main>
         <Header />
         <div className="mx-auto max-w-5xl px-4 md:px-8 space-y-32 pb-24">
+          {/* <BentoHero /> */}
           <Hero />
           <About />
           <Projects />
