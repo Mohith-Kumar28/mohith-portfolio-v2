@@ -2,7 +2,7 @@ import anime from "animejs";
 import { useEffect, useState } from "react";
 
 const GRID_WIDTH = 25;
-const GRID_HEIGHT = 20;
+const GRID_HEIGHT = 15;
 
 const DotGrid = () => {
   const [simulationActive, setSimulationActive] = useState(false);
@@ -93,7 +93,7 @@ const DotGrid = () => {
     <div
       onClick={handleDotClick}
       style={{ gridTemplateColumns: `repeat(${GRID_WIDTH}, 1fr)` }}
-      className="absolute right-0 top-[50%] z-0 grid max-w-[75%] -translate-y-[50%]"
+      className="absolute left-0 top-[80%] z-0 grid max-w-[75%] -translate-y-[50%]"
     >
       {dots}
     </div>

@@ -3,13 +3,14 @@ import { SectionHeader } from "../util/SectionHeader";
 import Reveal from "../util/Reveal";
 import { MyLinks } from "../nav/Header";
 import { Stats } from "./Stats";
+import DotGrid from "../hero/DotGrid";
 
 export const About = () => {
   return (
-    <section className="section-wrapper">
+    <section className="section-wrapper relative">
       <SectionHeader title="My Journey" dir="l" />
       <div className="grid grid-cols-1 md:grid-cols-[1fr_300px] gap-8">
-        <div className="space-y-4">
+        <div className="space-y-4 bg-gray-900/10 z-10 backdrop-blur-lg">
           <Reveal>
             <p>
               <span className="bg-rose-500 text-white py-2 px-3 rounded font-bold mr-1 float-left text-2xl">
@@ -48,6 +49,7 @@ export const About = () => {
 
         <Stats />
       </div>
+      <DotGrid />
     </section>
   );
 };
