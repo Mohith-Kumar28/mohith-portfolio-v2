@@ -2,13 +2,19 @@ import React from "react";
 import { MotionProps, motion } from "framer-motion";
 import { twMerge } from "tailwind-merge";
 import { FiArrowRight, FiMail, FiMapPin } from "react-icons/fi";
-import { SiGithub, SiTiktok, SiTwitter, SiYoutube } from "react-icons/si";
-import Reveal from "../util/Reveal";
+import { SiBehance, SiGithub, SiGmail, SiLinkedin } from "react-icons/si";
+
 import { OutlineButton } from "../buttons/OutlineButton";
+import Link from "next/link";
+import Image from "next/image";
+import { LinkPreview } from "../util/link-preview";
 
 export const BentoHero = () => {
   return (
-    <div className="min-h-screen bg-zinc-900 px-4 py-12 text-zinc-50">
+    <div
+      id="about"
+      className="min-h-screen bg-zinc-900 px-4 py-12 text-zinc-50"
+    >
       <motion.div
         initial="initial"
         animate="animate"
@@ -23,7 +29,6 @@ export const BentoHero = () => {
         <LocationBlock />
         <EmailListBlock />
       </motion.div>
-      <Footer />
     </div>
   );
 };
@@ -64,25 +69,34 @@ const Block = ({ className, ...rest }: BlockProps) => {
 
 const HeaderBlock = () => (
   <Block className="col-span-12 row-span-2 md:col-span-6">
-    <img
+    {/* <img
       src="https://api.dicebear.com/8.x/lorelei-neutral/svg?seed=John"
       alt="avatar"
       className="mb-4 size-14 rounded-full"
-    />
+    /> */}
+    <div className="bg-gray-500 border-2 size-16 mb-4 relative inline-block border-gray-400 rounded-full overflow-hidden">
+      <Image
+        alt="Reach logo"
+        src={"/profile-pic.png"}
+        layout="fill"
+        className="object-cover"
+      />
+    </div>
     <h1 className="mb-12 text-4xl font-medium leading-tight">
-      Hi, I'm Mohith.{" "}
+      Hi, I'm Mohith<span className="text-rose-500">.</span>{" "}
       <span className="text-zinc-400">
         I build cool websites like this one.
       </span>
     </h1>
-
     <OutlineButton
       onClick={() => {
         document.getElementById("projects")?.scrollIntoView();
       }}
       className="pointer-events-auto before:bg-rose-700 hover:text-white hover:border-rose-700 mt-4 bg-rose-500 text-zinc-100 border-rose-500 md:mt-6"
     >
-      View Projects
+      <LinkPreview url="http://www.mohith.in/#projects">
+        View Projects
+      </LinkPreview>
     </OutlineButton>
   </Block>
 );
@@ -94,28 +108,28 @@ const SocialsBlock = () => (
         rotate: "2.5deg",
         scale: 1.1,
       }}
-      className="col-span-6 bg-red-500 md:col-span-3"
+      className="col-span-6 bg-blue-500 md:col-span-3 "
     >
-      <a
-        href="#"
+      <LinkPreview
+        url="https://bit.ly/3Yj6jBy"
         className="grid h-full place-content-center text-3xl text-white"
       >
-        <SiYoutube />
-      </a>
+        <SiLinkedin />
+      </LinkPreview>
     </Block>
     <Block
       whileHover={{
         rotate: "-2.5deg",
         scale: 1.1,
       }}
-      className="col-span-6 bg-green-600 md:col-span-3"
+      className="col-span-6 bg-gray-700 md:col-span-3"
     >
-      <a
-        href="#"
+      <LinkPreview
+        url="https://bit.ly/3Ylzsw7"
         className="grid h-full place-content-center text-3xl text-white"
       >
         <SiGithub />
-      </a>
+      </LinkPreview>
     </Block>
     <Block
       whileHover={{
@@ -124,26 +138,28 @@ const SocialsBlock = () => (
       }}
       className="col-span-6 bg-zinc-50 md:col-span-3"
     >
-      <a
-        href="#"
+      <Link
+        href="mailto:mohithkumar808@gmail.com"
+        target="_blank"
         className="grid h-full place-content-center text-3xl text-black"
       >
-        <SiTiktok />
-      </a>
+        <SiGmail />
+      </Link>
     </Block>
     <Block
       whileHover={{
         rotate: "2.5deg",
         scale: 1.1,
       }}
-      className="col-span-6 bg-blue-500 md:col-span-3"
+      className="col-span-6 bg-green-500 md:col-span-3"
     >
-      <a
-        href="#"
+      <Link
+        href="https://bit.ly/3VjUrhM"
+        target="_blank"
         className="grid h-full place-content-center text-3xl text-white"
       >
-        <SiTwitter />
-      </a>
+        <SiBehance />
+      </Link>
     </Block>
   </>
 );
@@ -153,7 +169,8 @@ const AboutBlock = () => (
     <p className="text-zinc-400">
       Crafting digital masterpieces, one line at a time. With{" "}
       <span className="text-white"> 2+ years</span> of experience building web
-      based solutions, and a passion for UI/UX, I bring a unique blend of
+      based solutions, and a passion for{" "}
+      <span className="text-white"> UI/UX</span>, I bring a unique blend of
       technical strength and creative flair.
     </p>
   </Block>
@@ -161,30 +178,59 @@ const AboutBlock = () => (
 
 const LocationBlock = () => (
   <Block className="col-span-12 flex flex-col items-center gap-4 md:col-span-3">
-    <FiMapPin className="text-3xl" />
-    <p className="text-center text-lg text-zinc-400">Cyberspace</p>
+    <LinkPreview url="https://maps.app.goo.gl/HDNWb1HLF53Eji847">
+      <div className="flex flex-col  align-middle gap-4">
+        <FiMapPin className="text-3xl mx-auto" />
+        <p className="text-center text-lg text-zinc-400">Gurugram, India</p>
+      </div>
+    </LinkPreview>
   </Block>
 );
 
 const EmailListBlock = () => (
   <Block className="col-span-12 md:col-span-9">
-    <p className="mb-3 text-lg">Join my mailing list</p>
-    <form
-      onSubmit={(e) => e.preventDefault()}
-      className="flex items-center gap-2"
-    >
-      <input
-        type="email"
-        placeholder="Enter your email"
-        className="w-full rounded border border-zinc-700 bg-zinc-800 px-3 py-1.5 transition-colors focus:border-red-300 focus:outline-0"
-      />
-      <button
-        type="submit"
-        className="flex items-center gap-2 whitespace-nowrap rounded bg-zinc-50 px-3 py-2 text-sm font-medium text-zinc-900 transition-colors hover:bg-zinc-300"
-      >
-        <FiMail /> Join the list
-      </button>
-    </form>
+    <div className="flex flex-wrap justify-between gap-6 align-middle flex-grow">
+      <div className="bg-gray-500 border-2 border-gray-400 rounded-full p-3">
+        <Image
+          alt="Nextjs logo"
+          src={"/tech/Next.svg"}
+          width={50}
+          height={50}
+        />
+      </div>
+      <div className="bg-gray-500 border-2 border-gray-400 rounded-full p-3">
+        <Image
+          alt="Reach logo"
+          src={"/tech/React.svg"}
+          width={50}
+          height={50}
+        />
+      </div>
+      <div className="bg-gray-500 border-2 border-gray-400 rounded-full p-3">
+        <Image
+          alt="Express logo"
+          src={"/tech/Express.svg"}
+          width={50}
+          height={50}
+        />
+      </div>
+      <div className="bg-gray-500 border-2 border-gray-400 rounded-full p-3">
+        <Image
+          alt="MongoDB logo"
+          src={"/tech/MongoDB.svg"}
+          width={50}
+          height={50}
+        />
+      </div>
+      <div className="bg-gray-500 border-2 border-gray-400 rounded-full p-3">
+        <Image
+          alt="Figma logo"
+          src={"/tech/Figma.svg"}
+          width={50}
+          height={50}
+        />
+      </div>
+    </div>
   </Block>
 );
 
@@ -208,18 +254,5 @@ const Logo = () => {
         stopColor="#000000"
       ></path>
     </svg>
-  );
-};
-
-const Footer = () => {
-  return (
-    <footer className="mt-12">
-      <p className="text-center text-zinc-400">
-        Made with ❤️ by{" "}
-        <a href="#" className="text-red-300 hover:underline">
-          @tomisloading
-        </a>
-      </p>
-    </footer>
   );
 };

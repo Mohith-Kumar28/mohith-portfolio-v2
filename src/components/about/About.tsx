@@ -6,21 +6,20 @@ import { Stats } from "./Stats";
 
 export const About = () => {
   return (
-    <section id="about" className="section-wrapper">
-      <SectionHeader title="About" dir="l" />
+    <section className="section-wrapper">
+      <SectionHeader title="My Journey" dir="l" />
       <div className="grid grid-cols-1 md:grid-cols-[1fr_300px] gap-8">
         <div className="space-y-4">
           <Reveal>
             <p>
               <span className="bg-rose-500 text-white py-2 px-3 rounded font-bold mr-1 float-left text-2xl">
-                H
+                I
               </span>
-              ello I&apos;m Mohith, your go-to guy for all things web
-              development, hailing from the vibrant city of Hyderabad, India.
-              With a knack for turning complex problems into elegant solutions,
-              I&apos;ve navigated the digital seas from HTML/CSS to the depths
-              of MERN stack, all in pursuit of crafting the perfect web
-              experience.
+              &apos;m your go-to guy for all things web development, hailing
+              from the vibrant city of Hyderabad, India. With a knack for
+              turning complex problems into elegant solutions, I&apos;ve
+              navigated the digital seas from HTML/CSS to the depths of MERN
+              stack, all in pursuit of crafting the perfect web experience.
             </p>
           </Reveal>
 

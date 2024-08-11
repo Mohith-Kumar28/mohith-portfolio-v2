@@ -16,8 +16,8 @@ export const HomPage = () => {
       <main>
         <Header />
         <div className="mx-auto max-w-5xl px-4 md:px-8 space-y-32 pb-24">
-          {/* <BentoHero /> */}
-          <Hero />
+          <BentoHero />
+          {/* <Hero /> */}
           <About />
           <Projects />
           <Experience />
