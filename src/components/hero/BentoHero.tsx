@@ -91,9 +91,7 @@ const HeaderBlock = () => (
       }}
       className="pointer-events-auto before:bg-rose-700 hover:text-white hover:border-rose-700 mt-4 bg-rose-500 text-zinc-100 border-rose-500 md:mt-6"
     >
-      <LinkPreview url="http://www.mohith.in/#projects">
-        View Projects
-      </LinkPreview>
+      View Projects
     </OutlineButton>
   </Block>
 );
