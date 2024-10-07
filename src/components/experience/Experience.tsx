@@ -14,9 +14,23 @@ export const Experience = () => {
 
 const experience = [
   {
+    title: "Edstruments",
+    position: "Frontend Developer",
+    time: "Sept 2024 - Present",
+    location: "Hybrid, Bangalore",
+    description:
+      "As a Front End Developer at Edstruments, I'm currently focused on developing various features for our billing management software using ReactJS. This platform is utilized by schools and NGOs to streamline their financial processes. My work involves enhancing the functionality and user experience of the application, ensuring it meets the unique needs of our diverse client base. I collaborate closely with team members across different countries, which has sharpened my cross-cultural communication skills and broadened my perspective on global software development practices.",
+    tech: [
+      "ReactJS",
+      "Material UI",
+      "Redux",
+      "Team Collaboration",
+    ],
+  },
+  {
     title: "MapUp",
     position: "Fullstack Developer",
-    time: "Aug 2023 - Present",
+    time: "Aug 2023 - Sept 2024",
     location: "Remote",
     description:
       "Worked closely with data and development teams to launch an MVP and gather feedback from users for TollTally website. Integrated an industry-standard plugin for the Motive marketplace, ensuring scalability for up to 100,000 users using a combo of AWS and ExpressJS . Created a map visualization for toll data, enhancing performance with a 580% faster loading time. Refactored the TollGuru dashboard from WordPress to Astro, improving load times and delivering a clean, consistent UI.",
