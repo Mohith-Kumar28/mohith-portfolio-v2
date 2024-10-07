@@ -175,10 +175,10 @@ const AboutBlock = () => (
 
 const LocationBlock = () => (
   <Block className="col-span-12 flex flex-col items-center gap-4 md:col-span-3">
-    <LinkPreview url="https://maps.app.goo.gl/HDNWb1HLF53Eji847">
+    <LinkPreview url="https://maps.app.goo.gl/QgqiJEFLb3M2LS9r5">
       <div className="flex flex-col  align-middle gap-4">
         <FiMapPin className="text-3xl mx-auto" />
-        <p className="text-center text-lg text-zinc-400">Gurugram, India</p>
+        <p className="text-center text-lg text-zinc-400">Bengaluru, India</p>
       </div>
     </LinkPreview>
   </Block>
