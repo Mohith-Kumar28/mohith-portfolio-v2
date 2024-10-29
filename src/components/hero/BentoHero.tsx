@@ -183,8 +183,7 @@ const LocationBlock = () => (
     </LinkPreview>
   </Block>
 );
-
-const EmailListBlock = () => (
+ const EmailListBlock = () => (
   <Block className="col-span-12 md:col-span-9">
     <div className="flex flex-wrap justify-between gap-6 align-middle flex-grow">
       <LinkPreview url="https://nextjs.org/">
