@@ -208,63 +208,63 @@ const projects = [
       </>
     ),
   },
-  {
-    title: "Motive Plugin",
-    imgSrc: "/works/7.png",
-    ytVidSrc: "",
-    code: "",
-    projectLink:
-      "https://marketplace.gomotive.com/app/tolltally-gps-based-instant-toll-billing",
-    tech: [
-      "Toll Data Dashboard",
-      "AWS",
-      "ExpressJS",
-      "MongoDB",
-      "TypeScript",
-      "NextJS",
-    ],
-    description:
-      "Ever dreamt of simplifying toll calculations for fleets? That's exactly what I set out to achieve with MapUp's Toll Calculator. From concept to deployment, it was a rollercoaster ride filled with tech stacks, late-night debugging, and the occasional victory dance.",
-    modalContent: (
-      <>
-        <p>
-          Dive into the world of MapUp's Toll Calculator, a project that
-          transformed a complex task into a breeze for fleet operators. Starting
-          with a blank canvas and a vision, I navigated through the challenges
-          of integrating various technologies to create a seamless experience.
-        </p>
-        <p>
-          At the heart of this project was a powerful trio: AWS for cloud
-          infrastructure, ExpressJS for backend logic, and MongoDB for data
-          storage. These technologies formed the backbone of our application,
-          ensuring scalability and reliability.
-        </p>
-        <p>
-          The frontend was crafted with NextJS, providing a fast and responsive
-          interface that matched the high standards of modern web applications.
-          TypeScript played a crucial role in maintaining code quality and
-          preventing potential bugs.
-        </p>
-        <p>
-          One of the standout features was the integration of an
-          industry-standard plugin into the Motive marketplace, enhancing the
-          functionality and usability of our toll calculator.
-        </p>
-        <p>
-          The journey to support up to 100,000 users was a testament to the
-          power of cloud computing and efficient backend architecture. AWS
-          proved to be the perfect partner, offering scalability and performance
-          that met our growing demands.
-        </p>
-        <p>
-          Through this project, I learned the importance of perseverance,
-          collaboration, and the endless possibilities of technology. MapUp's
-          Toll Calculator is not just a tool; it's a reflection of innovative
-          thinking and dedication to improving everyday processes.
-        </p>
-      </>
-    ),
-  },
+  // {
+  //   title: "Motive Plugin",
+  //   imgSrc: "/works/7.png",
+  //   ytVidSrc: "",
+  //   code: "",
+  //   projectLink:
+  //     "https://marketplace.gomotive.com/app/tolltally-gps-based-instant-toll-billing",
+  //   tech: [
+  //     "Toll Data Dashboard",
+  //     "AWS",
+  //     "ExpressJS",
+  //     "MongoDB",
+  //     "TypeScript",
+  //     "NextJS",
+  //   ],
+  //   description:
+  //     "Ever dreamt of simplifying toll calculations for fleets? That's exactly what I set out to achieve with MapUp's Toll Calculator. From concept to deployment, it was a rollercoaster ride filled with tech stacks, late-night debugging, and the occasional victory dance.",
+  //   modalContent: (
+  //     <>
+  //       <p>
+  //         Dive into the world of MapUp's Toll Calculator, a project that
+  //         transformed a complex task into a breeze for fleet operators. Starting
+  //         with a blank canvas and a vision, I navigated through the challenges
+  //         of integrating various technologies to create a seamless experience.
+  //       </p>
+  //       <p>
+  //         At the heart of this project was a powerful trio: AWS for cloud
+  //         infrastructure, ExpressJS for backend logic, and MongoDB for data
+  //         storage. These technologies formed the backbone of our application,
+  //         ensuring scalability and reliability.
+  //       </p>
+  //       <p>
+  //         The frontend was crafted with NextJS, providing a fast and responsive
+  //         interface that matched the high standards of modern web applications.
+  //         TypeScript played a crucial role in maintaining code quality and
+  //         preventing potential bugs.
+  //       </p>
+  //       <p>
+  //         One of the standout features was the integration of an
+  //         industry-standard plugin into the Motive marketplace, enhancing the
+  //         functionality and usability of our toll calculator.
+  //       </p>
+  //       <p>
+  //         The journey to support up to 100,000 users was a testament to the
+  //         power of cloud computing and efficient backend architecture. AWS
+  //         proved to be the perfect partner, offering scalability and performance
+  //         that met our growing demands.
+  //       </p>
+  //       <p>
+  //         Through this project, I learned the importance of perseverance,
+  //         collaboration, and the endless possibilities of technology. MapUp's
+  //         Toll Calculator is not just a tool; it's a reflection of innovative
+  //         thinking and dedication to improving everyday processes.
+  //       </p>
+  //     </>
+  //   ),
+  // },
   // {
   //   title: "WhatTo",
   //   imgSrc: "/works/4.png",
