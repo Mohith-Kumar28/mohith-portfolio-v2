@@ -116,52 +116,52 @@ const projects = [
     ),
   },
 
-  {
-    title: "Arena",
-    imgSrc: "/works/5.png",
-    ytVidSrc:
-      "https://www.youtube.com/embed/zrjecqNwh_g?si=PPJ1i_dCmzb9ORF8&autoplay=1&mute=1&playlist=zrjecqNwh_g&loop=1",
-    code: "",
-    projectLink:
-      "https://www.figma.com/design/1bUXpdtWCQg1LO5kWQ4mA1/Arena?t=ARcw1ZAq1GGxp1s6-0",
-    tech: ["Cricket Betting App UI/UX", "Figma"],
-    description:
-      "This freelance project was developed using Figma to create a minimum viable product mobile design for a cricket betting application. The client's requirements emphasized a clean user interface (UI) with high interactivity.",
-    modalContent: (
-      <>
-        <p>
-          Arena, a freelance project, was designed with a focus on enhancing the
-          cricket betting experience through a clean and interactive user
-          interface. Utilizing Figma, the project team set out to create a
-          minimum viable product (MVP) that would address the client's need for
-          a modern, engaging betting platform.
-        </p>{" "}
-        <p>
-          The design process centered around creating a seamless user journey,
-          starting with a straightforward registration process that accommodates
-          various sign-up methods. The interface was kept simple yet intuitive,
-          guiding users through the app's features with ease. Key elements
-          included live scores, match previews, and personalized betting
-          options, all presented in a visually appealing manner.
-        </p>{" "}
-        <p>
-          One of the standout features of Arena was its comprehensive cricket
-          event coverage, ensuring users had access to detailed information and
-          real-time updates. The app also incorporated customizable alerts for
-          users' favorite teams or players, enhancing the betting experience by
-          keeping users informed and engaged.
-        </p>{" "}
-        <p>
-          In summary, Arena represents a collaborative effort to innovate within
-          the cricket betting domain, showcasing how a freelance project can
-          leverage modern design tools like Figma to create impactful solutions.
-          While it remains a concept, Arena's design principles and features
-          serve as valuable insights into enhancing user experiences in
-          competitive sports betting platforms.
-        </p>
-      </>
-    ),
-  },
+  // {
+  //   title: "Arena",
+  //   imgSrc: "/works/5.png",
+  //   ytVidSrc:
+  //     "https://www.youtube.com/embed/zrjecqNwh_g?si=PPJ1i_dCmzb9ORF8&autoplay=1&mute=1&playlist=zrjecqNwh_g&loop=1",
+  //   code: "",
+  //   projectLink:
+  //     "https://www.figma.com/design/1bUXpdtWCQg1LO5kWQ4mA1/Arena?t=ARcw1ZAq1GGxp1s6-0",
+  //   tech: ["Cricket Betting App UI/UX", "Figma"],
+  //   description:
+  //     "This freelance project was developed using Figma to create a minimum viable product mobile design for a cricket betting application. The client's requirements emphasized a clean user interface (UI) with high interactivity.",
+  //   modalContent: (
+  //     <>
+  //       <p>
+  //         Arena, a freelance project, was designed with a focus on enhancing the
+  //         cricket betting experience through a clean and interactive user
+  //         interface. Utilizing Figma, the project team set out to create a
+  //         minimum viable product (MVP) that would address the client's need for
+  //         a modern, engaging betting platform.
+  //       </p>{" "}
+  //       <p>
+  //         The design process centered around creating a seamless user journey,
+  //         starting with a straightforward registration process that accommodates
+  //         various sign-up methods. The interface was kept simple yet intuitive,
+  //         guiding users through the app's features with ease. Key elements
+  //         included live scores, match previews, and personalized betting
+  //         options, all presented in a visually appealing manner.
+  //       </p>{" "}
+  //       <p>
+  //         One of the standout features of Arena was its comprehensive cricket
+  //         event coverage, ensuring users had access to detailed information and
+  //         real-time updates. The app also incorporated customizable alerts for
+  //         users' favorite teams or players, enhancing the betting experience by
+  //         keeping users informed and engaged.
+  //       </p>{" "}
+  //       <p>
+  //         In summary, Arena represents a collaborative effort to innovate within
+  //         the cricket betting domain, showcasing how a freelance project can
+  //         leverage modern design tools like Figma to create impactful solutions.
+  //         While it remains a concept, Arena's design principles and features
+  //         serve as valuable insights into enhancing user experiences in
+  //         competitive sports betting platforms.
+  //       </p>
+  //     </>
+  //   ),
+  // },
   {
     title: "Check It Out Media",
     imgSrc: "/works/8.png",
