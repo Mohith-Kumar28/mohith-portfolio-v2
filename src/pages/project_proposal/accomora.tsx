@@ -431,6 +431,7 @@ const TimelineAndPricing = () => {
   const phases = [
     {
       month: 'Day 0',
+      day: 0,
       phase: 'Advance Payment',
       title: 'Project Kickoff',
       deliverables: [
@@ -441,10 +442,12 @@ const TimelineAndPricing = () => {
       payment: {
         amount: '₹1,00,000',
         percentage: '8.33%'
-      }
+      },
+      timelineProgress: '0%'
     },
     {
       month: 'Day 15',
+      day: 15,
       weeks: 'Days 1-15',
       phase: 'Milestone 1',
       title: 'Planning & Architecture',
@@ -457,10 +460,12 @@ const TimelineAndPricing = () => {
       payment: {
         amount: '₹1,50,000',
         percentage: '12.5%'
-      }
+      },
+      timelineProgress: '12.5%'
     },
     {
       month: 'Day 30',
+      day: 30,
       weeks: 'Days 16-30',
       phase: 'Milestone 2',
       title: 'Foundation Development',
@@ -473,10 +478,12 @@ const TimelineAndPricing = () => {
       payment: {
         amount: '₹1,50,000',
         percentage: '12.5%'
-      }
+      },
+      timelineProgress: '25%'
     },
     {
       month: 'Day 45',
+      day: 45,
       weeks: 'Days 31-45',
       phase: 'Milestone 3',
       title: 'Guest Portal - Search & Listing',
@@ -489,10 +496,12 @@ const TimelineAndPricing = () => {
       payment: {
         amount: '₹1,50,000',
         percentage: '12.5%'
-      }
+      },
+      timelineProgress: '37.5%'
     },
     {
       month: 'Day 60',
+      day: 60,
       weeks: 'Days 46-60',
       phase: 'Milestone 4',
       title: 'Guest Portal - Booking Flow',
@@ -505,10 +514,12 @@ const TimelineAndPricing = () => {
       payment: {
         amount: '₹1,50,000',
         percentage: '12.5%'
-      }
+      },
+      timelineProgress: '50%'
     },
     {
       month: 'Day 75',
+      day: 75,
       weeks: 'Days 61-75',
       phase: 'Milestone 5',
       title: 'Property Manager Dashboard',
@@ -521,10 +532,12 @@ const TimelineAndPricing = () => {
       payment: {
         amount: '₹1,50,000',
         percentage: '12.5%'
-      }
+      },
+      timelineProgress: '62.5%'
     },
     {
       month: 'Day 90',
+      day: 90,
       weeks: 'Days 76-90',
       phase: 'Milestone 6',
       title: 'Admin Panel & Analytics',
@@ -537,10 +550,12 @@ const TimelineAndPricing = () => {
       payment: {
         amount: '₹1,50,000',
         percentage: '12.5%'
-      }
+      },
+      timelineProgress: '75%'
     },
     {
       month: 'Day 105',
+      day: 105,
       weeks: 'Days 91-105',
       phase: 'Milestone 7',
       title: 'Testing & Optimization',
@@ -553,10 +568,12 @@ const TimelineAndPricing = () => {
       payment: {
         amount: '₹1,00,000',
         percentage: '8.33%'
-      }
+      },
+      timelineProgress: '87.5%'
     },
     {
       month: 'Day 120',
+      day: 120,
       weeks: 'Days 106-120',
       phase: 'Final Payment',
       title: 'Deployment & Launch',
@@ -569,7 +586,8 @@ const TimelineAndPricing = () => {
       payment: {
         amount: '₹1,00,000',
         percentage: '8.33%'
-      }
+      },
+      timelineProgress: '100%'
     }
   ];
 
@@ -630,11 +648,17 @@ const TimelineAndPricing = () => {
                   </div>
 
                   {/* Progress Bar */}
-                  <div className="mt-4 w-full bg-zinc-800 rounded-full h-2">
-                    <div
-                      className="bg-gradient-to-r from-rose-500 to-pink-500 h-2 rounded-full transition-all duration-1000"
-                      style={{ width: phase.payment.percentage }}
-                    />
+                  <div className="mt-4">
+                    <div className="flex justify-between text-xs text-zinc-400 mb-1">
+                      <span>Project Progress</span>
+                      <span>{phase.timelineProgress} Complete</span>
+                    </div>
+                    <div className="w-full bg-zinc-800 rounded-full h-2">
+                      <div
+                        className="bg-gradient-to-r from-rose-500 to-pink-500 h-2 rounded-full transition-all duration-1000"
+                        style={{ width: phase.timelineProgress }}
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
