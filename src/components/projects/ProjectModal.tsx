@@ -96,9 +96,11 @@ export const ProjectModal = ({
 
         <div className="p-8">
           <div className="mb-8">
+            {(code && code !== "" || projectLink && projectLink !== "") && (
             <p className="font-bold mb-2 text-xl">
               Project Links<span className="text-rose-500">.</span>
             </p>
+)}
             <div className="flex items-center gap-4 text-sm">
               {code && code !== "" && (
                 <Link
