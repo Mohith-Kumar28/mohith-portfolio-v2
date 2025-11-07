@@ -17,7 +17,7 @@ export const About = () => {
                 I
               </span>
               &apos;m your go-to guy for all things web development, hailing
-              from the vibrant city of Hyderabad, India. With a knack for
+              from the vibrant city of Bengaluru, India. With a knack for
               turning complex problems into elegant solutions, I&apos;ve
               navigated the digital seas from HTML/CSS to the depths of MERN
               stack, all in pursuit of crafting the perfect web experience.
@@ -29,7 +29,7 @@ export const About = () => {
               My journey has been a rollercoaster of learning and unlearning,
               from the thrill of my first WordPress site to the exhilaration of
               building a multi-vendor platform, Foozy. Today, I wear multiple
-              hats - a Frontend Developer at MapUp, a Freelancer tackling
+              hats - a Frontend Developer at Edstruments, a Freelancer tackling
               projects that spark my curiosity, and the architect behind Foozy,
               my playground for innovation.
             </p>
