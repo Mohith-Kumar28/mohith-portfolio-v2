@@ -110,14 +110,16 @@ export const ProjectModal = ({
                   <AiFillGithub /> Source Code
                 </Link>
               )}
-              <Link
-                target="_blank"
-                rel="nofollow"
-                className="text-zinc-300 hover:text-rose-300 transition-colors flex items-center gap-1"
-                href={projectLink}
-              >
-                <AiOutlineExport /> Live Project
-              </Link>
+              {projectLink && projectLink !== "" && (
+                <Link
+                  target="_blank"
+                  rel="nofollow"
+                  className="text-zinc-300 hover:text-rose-300 transition-colors flex items-center gap-1"
+                  href={projectLink}
+                >
+                  <AiOutlineExport /> Live Project
+                </Link>
+              )}
             </div>
           </div>
 
