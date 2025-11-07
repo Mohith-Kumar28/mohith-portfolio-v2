@@ -4,9 +4,16 @@ import { useAnimation, useInView, motion } from "framer-motion";
 interface RevealProps {
   children: JSX.Element;
   width?: string;
+  className?: string;
+  fullHeight?: boolean; // when true, container and content stretch to parent height
 }
 
-export const Reveal = ({ children, width = "w-fit" }: RevealProps) => {
+export const Reveal = ({
+  children,
+  width = "w-fit",
+  className = "",
+  fullHeight = false,
+}: RevealProps) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
@@ -21,7 +28,12 @@ export const Reveal = ({ children, width = "w-fit" }: RevealProps) => {
   }, [isInView]);
 
   return (
-    <div ref={ref} className={`relative overflow-hidden ${width}`}>
+    <div
+      ref={ref}
+      className={`relative overflow-hidden ${width} ${className} ${
+        fullHeight ? "h-full" : ""
+      }`}
+    >
       <motion.div
         variants={{
           hidden: { opacity: 0, y: 75 },
@@ -30,6 +42,7 @@ export const Reveal = ({ children, width = "w-fit" }: RevealProps) => {
         initial="hidden"
         animate={mainControls}
         transition={{ duration: 0.5, delay: 0.25 }}
+        className={fullHeight ? "h-full" : ""}
       >
         {children}
       </motion.div>

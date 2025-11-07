@@ -6,7 +6,7 @@ import { OutlineButton } from "../buttons/OutlineButton";
 import MiniProjectCard from "./MiniProjectCard";
 
 export const Projects = () => {
-  const [viewAllOpen, setViewAllOpen] = useState(false);
+  const [viewAllOpen, setViewAllOpen] = useState(true);
   return (
     <section className="section-wrapper" id="projects">
       <SectionHeader title="Projects" dir="r" />
@@ -34,9 +34,9 @@ export const Projects = () => {
         {/* </div> */}
 
         {/* <div className="flex flex-wrap w-full gap-6 mt-4"> */}
-        {miniProjects.map((project) => (
+        {/* {miniProjects.map((project) => (
           <MiniProjectCard key={project.name} project={project} />
-        ))}
+        ))} */}
         {/* </div> */}
 
         <motion.div
@@ -63,6 +63,52 @@ export const Projects = () => {
 
 const projects = [
   {
+    title: "3DotAI",
+    imgSrc: "/works/2.png",
+    ytVidSrc:
+      "https://www.youtube.com/embed/r6JTkJLEeWs?autoplay=1&mute=1&playlist=r6JTkJLEeWs&loop=1",
+    code: "https://github.com/Mohith-Kumar28/tiktok-saas-frontend-main",
+    projectLink: "",
+    tech: ["TikTok DM Bots", "NextJS", "NestJS", "Better Auth", "ShadCN", "SupaBase"],
+    description:
+      "3DotAI automates TikTok DM outreach to creators so you can run targeted campaigns at scale. It handles discovery, personalized messaging, scheduling, and tracking replies to streamline creator outreach.",
+    modalContent: (
+      <>
+        <p>
+          3DotAI is built to run high volume, compliant creator outreach on
+          TikTok using automated DM bots. It helps teams discover creators,
+          craft personalized message templates, schedule multi step cadences,
+          and track replies and outcomes — all from a single dashboard.
+        </p>
+        <p>
+          The campaign builder lets you define audiences, segment creators,
+          and set message steps with delays, variables, and fallbacks. Message
+          templates support personalization tokens like creator name, niche,
+          and past content, so outreach feels relevant rather than spammy.
+        </p>
+        <p>
+          A rate‑limited sending service ensures safe delivery with
+          anti‑spam controls, retries, and pause/resume for active campaigns.
+          Built‑in analytics surface key metrics — sends, opens, replies,
+          and conversions — so you can iterate quickly and double down on what
+          works.
+        </p>
+        <p>
+          Operational features include CSV import/export, deduplication,
+          creator merging, and audit logs for compliance. The UI is designed
+          for speed: bulk actions, keyboard shortcuts, and sensible defaults
+          reduce the friction of running daily outreach.
+        </p>
+        <p>
+          Whether you’re testing a new campaign or scaling established
+          workflows, 3DotAI gives you the control and observability needed to
+          run TikTok DM outreach at scale — with personalization and
+          performance built in.
+        </p>
+      </>
+    ),
+  },
+    {
     title: "Foozy",
     imgSrc: "/works/1.png",
     ytVidSrc:
@@ -115,53 +161,151 @@ const projects = [
       </>
     ),
   },
+  {
+    title: "LIC Self Help Group",
+    imgSrc: "/works/lic-shp/1.png",
+    ytVidSrc: "",
+    code: "https://github.com/Mohith-Kumar28/saas-lic-shg",
+    projectLink: "",
+    tech: ["Members Management", "Role-based Access", "NextJS"],
+    description:
+      "A role-based members management platform for LIC employees. People register as members and join sub-branches; branch, sub-branch, and member roles each have tailored views.",
+    images: [
+      "/works/lic-shp/0.jpg",
+      "/works/lic-shp/1.png",
+      "/works/lic-shp/2.jpg",
+      "/works/lic-shp/3.png",
+      "/works/lic-shp/4.jpg",
+      "/works/lic-shp/5.png",
+      "/works/lic-shp/6.jpg",
+      "/works/lic-shp/7.png",
+      "/works/lic-shp/8.jpg",
+      "/works/lic-shp/8.png",
+      "/works/lic-shp/9.jpg",
+      "/works/lic-shp/10.jpg",
+      "/works/lic-shp/11.jpg",
+      "/works/lic-shp/12.jpg",
+      "/works/lic-shp/13.png",
+    ],
+    modalContent: (
+      <>
+        <p>
+          Designed for LIC teams, this app streamlines member onboarding and
+          operational workflows across branches. Users can register, choose a
+          branch or sub-branch, and access role-specific features that keep data
+          organized and actions clear.
+        </p>
+        <p>
+          Roles include Branch, Sub-Branch, and Member, each with tailored
+          dashboards. Branch admins manage sub-branches and member rosters;
+          sub-branch leads handle local approvals and communications; members
+          update their profiles, view notices, and engage with their assigned
+          unit.
+        </p>
+        <p>
+          Built with NextJS, the frontend focuses on clarity and speed. Clean
+          navigation simplifies tasks like registrations, list management,
+          status tracking, and exporting records. The result is a practical tool
+          that reduces manual coordination and improves team visibility.
+        </p>
+      </>
+    ),
+  },
+  {
+    title: "AI-Hello",
+    imgSrc: "/works/ai-hello/1.jpg",
+    ytVidSrc: "",
+    code: "",
+    projectLink: "",
+    tech: ["Amazon Ads Automation Dashboard", "Angular"],
+    description:
+      "A front-end revamp for a Germany-based client: an Angular dashboard to visualize and manage Amazon ad automations based on provided Figma designs.",
+    images: [
+      "/works/ai-hello/0.jpg",
+      "/works/ai-hello/1.jpg",
+      "/works/ai-hello/2.jpg",
+      "/works/ai-hello/3.jpg",
+      "/works/ai-hello/4.jpg",
+      "/works/ai-hello/5.jpg",
+      "/works/ai-hello/6.jpg",
+      "/works/ai-hello/7.jpg",
+      "/works/ai-hello/8.jpg",
+      "/works/ai-hello/9.jpg",
+      "/works/ai-hello/10.jpg",
+      "/works/ai-hello/11.jpg",
+      "/works/ai-hello/12.jpg",
+    ],
+    modalContent: (
+      <>
+        <p>
+          This freelance engagement focused on rebuilding the entire front-end
+          of an Amazon ads automation dashboard in Angular. Working from
+          detailed Figma designs, the goal was to deliver a clean, performant UI
+          for campaign configuration, monitoring, and insights.
+        </p>
+        <p>
+          Key screens included campaign setup flows, rule builders, performance
+          charts, and data tables with filtering and bulk actions. The emphasis
+          was on responsive layout, consistent styling, and high information
+          density without overwhelming the user.
+        </p>
+        <p>
+          Collaboration with the client centered on rapid iteration and design
+          fidelity, ensuring the final UI matched their workflows and branding
+          precisely. The revamp improved usability and paved the path for future
+          automation features.
+        </p>
+      </>
+    ),
+  },
 
-  // {
-  //   title: "Arena",
-  //   imgSrc: "/works/5.png",
-  //   ytVidSrc:
-  //     "https://www.youtube.com/embed/zrjecqNwh_g?si=PPJ1i_dCmzb9ORF8&autoplay=1&mute=1&playlist=zrjecqNwh_g&loop=1",
-  //   code: "",
-  //   projectLink:
-  //     "https://www.figma.com/design/1bUXpdtWCQg1LO5kWQ4mA1/Arena?t=ARcw1ZAq1GGxp1s6-0",
-  //   tech: ["Cricket Betting App UI/UX", "Figma"],
-  //   description:
-  //     "This freelance project was developed using Figma to create a minimum viable product mobile design for a cricket betting application. The client's requirements emphasized a clean user interface (UI) with high interactivity.",
-  //   modalContent: (
-  //     <>
-  //       <p>
-  //         Arena, a freelance project, was designed with a focus on enhancing the
-  //         cricket betting experience through a clean and interactive user
-  //         interface. Utilizing Figma, the project team set out to create a
-  //         minimum viable product (MVP) that would address the client's need for
-  //         a modern, engaging betting platform.
-  //       </p>{" "}
-  //       <p>
-  //         The design process centered around creating a seamless user journey,
-  //         starting with a straightforward registration process that accommodates
-  //         various sign-up methods. The interface was kept simple yet intuitive,
-  //         guiding users through the app's features with ease. Key elements
-  //         included live scores, match previews, and personalized betting
-  //         options, all presented in a visually appealing manner.
-  //       </p>{" "}
-  //       <p>
-  //         One of the standout features of Arena was its comprehensive cricket
-  //         event coverage, ensuring users had access to detailed information and
-  //         real-time updates. The app also incorporated customizable alerts for
-  //         users' favorite teams or players, enhancing the betting experience by
-  //         keeping users informed and engaged.
-  //       </p>{" "}
-  //       <p>
-  //         In summary, Arena represents a collaborative effort to innovate within
-  //         the cricket betting domain, showcasing how a freelance project can
-  //         leverage modern design tools like Figma to create impactful solutions.
-  //         While it remains a concept, Arena's design principles and features
-  //         serve as valuable insights into enhancing user experiences in
-  //         competitive sports betting platforms.
-  //       </p>
-  //     </>
-  //   ),
-  // },
+
+  {
+    title: "Arena",
+    imgSrc: "/works/5.png",
+    ytVidSrc:
+      "https://www.youtube.com/embed/zrjecqNwh_g?si=PPJ1i_dCmzb9ORF8&autoplay=1&mute=1&playlist=zrjecqNwh_g&loop=1",
+    code: "",
+    projectLink:
+      "https://www.figma.com/design/1bUXpdtWCQg1LO5kWQ4mA1/Arena?t=ARcw1ZAq1GGxp1s6-0",
+    tech: ["Cricket Betting App UI/UX", "Figma"],
+    description:
+      "This freelance project was developed using Figma to create a minimum viable product mobile design for a cricket betting application. The client's requirements emphasized a clean user interface (UI) with high interactivity.",
+    modalContent: (
+      <>
+        <p>
+          Arena, a freelance project, was designed with a focus on enhancing the
+          cricket betting experience through a clean and interactive user
+          interface. Utilizing Figma, the project team set out to create a
+          minimum viable product (MVP) that would address the client's need for
+          a modern, engaging betting platform.
+        </p>{" "}
+        <p>
+          The design process centered around creating a seamless user journey,
+          starting with a straightforward registration process that accommodates
+          various sign-up methods. The interface was kept simple yet intuitive,
+          guiding users through the app's features with ease. Key elements
+          included live scores, match previews, and personalized betting
+          options, all presented in a visually appealing manner.
+        </p>{" "}
+        <p>
+          One of the standout features of Arena was its comprehensive cricket
+          event coverage, ensuring users had access to detailed information and
+          real-time updates. The app also incorporated customizable alerts for
+          users' favorite teams or players, enhancing the betting experience by
+          keeping users informed and engaged.
+        </p>{" "}
+        <p>
+          In summary, Arena represents a collaborative effort to innovate within
+          the cricket betting domain, showcasing how a freelance project can
+          leverage modern design tools like Figma to create impactful solutions.
+          While it remains a concept, Arena's design principles and features
+          serve as valuable insights into enhancing user experiences in
+          competitive sports betting platforms.
+        </p>
+      </>
+    ),
+  },
   {
     title: "Check It Out Media",
     imgSrc: "/works/8.png",

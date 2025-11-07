@@ -1,10 +1,12 @@
 import { useEffect } from "react";
+import React from "react";
 import ReactDOM from "react-dom";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { AiFillGithub, AiOutlineExport } from "react-icons/ai";
 import { MdClose } from "react-icons/md";
 import Image from "next/image";
+import { SimpleCarousel } from "../ui/SimpleCarousel";
 
 interface Props {
   isOpen: boolean;
@@ -12,6 +14,7 @@ interface Props {
   title: string;
   imgSrc: string;
   ytVidSrc: string;
+  images?: string[];
   code: string;
   projectLink: string;
   tech: string[];
@@ -24,6 +27,7 @@ export const ProjectModal = ({
   setIsOpen,
   imgSrc,
   ytVidSrc,
+  images,
   isOpen,
   title,
   code,
@@ -60,7 +64,11 @@ export const ProjectModal = ({
           alt={`An image of the ${title} project.`}
         /> */}
 
-        {ytVidSrc && ytVidSrc != "" ? (
+        {images && images.length > 0 ? (
+          <div className="w-full h-96 relative">
+            <SimpleCarousel images={images} height={384} auto intervalMs={3000} />
+          </div>
+        ) : ytVidSrc && ytVidSrc != "" ? (
           <iframe
             // width="560"
             // height="315"
@@ -77,7 +85,7 @@ export const ProjectModal = ({
               src={imgSrc}
               alt={`An image of the ${title} project.`}
               layout="fill"
-              objectFit="cover"
+              objectFit="contain"
               className=""
               style={{
                 transformOrigin: "center",

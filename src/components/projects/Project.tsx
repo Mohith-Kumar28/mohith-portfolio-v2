@@ -1,10 +1,12 @@
 import { useAnimation, useInView, motion } from "framer-motion";
+import React from "react";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { AiFillGithub, AiOutlineExport } from "react-icons/ai";
 import { ProjectModal } from "./ProjectModal";
 import Reveal from "../util/Reveal";
 import Image from "next/image";
+import { SimpleCarousel } from "../ui/SimpleCarousel";
 import { sendGTMEvent } from "@next/third-parties/google";
 import { Chip } from "../util/Chip";
 
@@ -14,6 +16,7 @@ interface Props {
   projectLink: string;
   imgSrc: string;
   ytVidSrc: string;
+  images?: string[];
   tech: string[];
   title: string;
   code: string;
@@ -25,6 +28,7 @@ export const Project = ({
   description,
   imgSrc,
   ytVidSrc,
+  images,
   title,
   code,
   tech,
@@ -77,7 +81,16 @@ export const Project = ({
             }}
             className="w-[85%] absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/4 transition-all rounded"
           /> */}
-          {ytVidSrc && ytVidSrc != "" ? (
+          {images && images.length > 0 ? (
+            <div className="absolute inset-0">
+              <div className="w-full h-full">
+                {/* Use full-width + full-height reveal to avoid collapsing height */}
+                <Reveal width="w-full" fullHeight>
+                  <SimpleCarousel images={images} auto intervalMs={3000} />
+                </Reveal>
+              </div>
+            </div>
+          ) : ytVidSrc && ytVidSrc != "" ? (
             <iframe
               // width="560"
               // height="315"
@@ -93,7 +106,7 @@ export const Project = ({
               src={imgSrc}
               alt={`An image of the ${title} project.`}
               layout="fill"
-              objectFit="cover"
+              objectFit="contain"
               quality={100}
               className="w-[85%] absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/4 transition-all rounded hover:scale-90"
               style={{
@@ -126,15 +139,17 @@ export const Project = ({
                     <AiFillGithub />
                   </Link>
                 )}
-                <Link
-                  target="_blank"
-                  rel="nofollow"
-                  className="text-zinc-300 hover:text-rose-300 transition-colors flex items-center gap-1"
-                  href={projectLink}
-                >
-                  <span className="text-base mr-1"> Live project </span>{" "}
-                  <AiOutlineExport />
-                </Link>
+                {projectLink && projectLink !== "" && (
+                  <Link
+                    target="_blank"
+                    rel="nofollow"
+                    className="text-zinc-300 hover:text-rose-300 transition-colors flex items-center gap-1"
+                    href={projectLink}
+                  >
+                    <span className="text-base mr-1"> Live project </span>{" "}
+                    <AiOutlineExport />
+                  </Link>
+                )}
               </div>
 
               {/* {code && code != "" && (
@@ -180,6 +195,7 @@ export const Project = ({
         isOpen={isOpen}
         imgSrc={imgSrc}
         ytVidSrc={ytVidSrc}
+        images={images}
         title={title}
         code={code}
         tech={tech}
