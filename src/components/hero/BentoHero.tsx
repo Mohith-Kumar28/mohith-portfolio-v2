@@ -8,6 +8,7 @@ import { OutlineButton } from "../buttons/OutlineButton";
 import Link from "next/link";
 import Image from "next/image";
 import { LinkPreview } from "../util/link-preview";
+import { SwapLogos } from "./SwapLogos";
 
 export const BentoHero = () => {
   return (
@@ -183,60 +184,9 @@ const LocationBlock = () => (
     </LinkPreview>
   </Block>
 );
- const EmailListBlock = () => (
+const EmailListBlock = () => (
   <Block className="col-span-12 md:col-span-9">
-    <div className="flex flex-wrap justify-between gap-6 align-middle flex-grow">
-      <LinkPreview url="https://nextjs.org/">
-        <div className="bg-gray-500 border-2 border-gray-400 rounded-full p-3">
-          <Image
-            alt="Nextjs logo"
-            src={"/tech/Next.svg"}
-            width={50}
-            height={50}
-          />
-        </div>
-      </LinkPreview>
-      <LinkPreview url="https://react.dev/">
-        <div className="bg-gray-500 border-2 border-gray-400 rounded-full p-3">
-          <Image
-            alt="Reach logo"
-            src={"/tech/React.svg"}
-            width={50}
-            height={50}
-          />
-        </div>
-      </LinkPreview>
-      <LinkPreview url="https://expressjs.com/">
-        <div className="bg-gray-500 border-2 border-gray-400 rounded-full p-3">
-          <Image
-            alt="Express logo"
-            src={"/tech/Express.svg"}
-            width={50}
-            height={50}
-          />
-        </div>
-      </LinkPreview>
-      <LinkPreview url="https://www.mongodb.com/">
-        <div className="bg-gray-500 border-2 border-gray-400 rounded-full p-3">
-          <Image
-            alt="MongoDB logo"
-            src={"/tech/MongoDB.svg"}
-            width={50}
-            height={50}
-          />
-        </div>
-      </LinkPreview>
-      <LinkPreview url="https://www.figma.com/about/">
-        <div className="bg-gray-500 border-2 border-gray-400 rounded-full p-3">
-          <Image
-            alt="Figma logo"
-            src={"/tech/Figma.svg"}
-            width={50}
-            height={50}
-          />
-        </div>
-      </LinkPreview>
-    </div>
+    <SwapLogos />
   </Block>
 );
 
