@@ -152,7 +152,7 @@ const SocialsBlock = () => (
       className="col-span-6 bg-green-500 md:col-span-3"
     >
       <Link
-        href="https://bit.ly/3VjUrhM"
+        href="https://www.behance.net/mohithkumar12"
         target="_blank"
         className="grid h-full place-content-center text-3xl text-white"
       >

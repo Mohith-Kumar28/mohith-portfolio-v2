@@ -114,7 +114,7 @@ const projects = [
     ytVidSrc:
       "https://www.youtube.com/embed/ut6o6VbJG6I?si=VtTZBa_sIjNgOH2J&autoplay=1&mute=1&playlist=ut6o6VbJG6I&loop=1",
     code: "",
-    projectLink: "https://bit.ly/4aKGT4Y",
+    projectLink: "",
     tech: ["Food Pre Ordering Platform", "MERN Stack"],
     description:
       "Hey there Ever had one of those ideas that felt too big to be real? That's exactly how Foozy started - as a wild dream in my college dorm room. Now, it's a real deal, using tech magic to make food ordering a breeze. Want to hear how we did it? Let's dive in!",
