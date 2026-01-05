@@ -23,17 +23,13 @@ import {
 import { motion } from "framer-motion";
 
 export const SwapLogos = () => {
-  return (
-    <div className="py-4">
-      <Logos />
-    </div>
-  );
+  return <Logos />;
 };
 
 const Logos = () => {
   return (
-    <section>
-      <div className="mx-auto grid max-w-2xl grid-cols-4 divide-x divide-zinc-700 border border-zinc-700 rounded-lg overflow-hidden">
+    <section className="w-full h-full">
+      <div className="grid grid-cols-4 h-full">
         <Spinner
           top={<SiNextdotjs className="text-white" />}
           bottom={<SiReact className="text-[#58C4DC]" />}
@@ -70,18 +66,18 @@ const Spinner = ({
   bottom: React.ReactNode;
 }) => {
   return (
-    <div className="relative h-14 w-full overflow-hidden bg-zinc-800 text-2xl">
+    <div className="relative h-full min-h-[80px] sm:min-h-[120px] w-full overflow-hidden bg-zinc-800 text-2xl sm:text-4xl">
       {/* TOP SPINNER */}
       <motion.div
         style={{
-          y: "-50%",
+          y: "-40%",
           x: "-50%",
         }}
         animate={{
           rotate: ["0deg", "0deg", "180deg", "180deg", "360deg", "360deg"],
         }}
         transition={TRANSITION}
-        className="absolute left-1/2 z-10 h-14 w-full overflow-hidden bg-zinc-800"
+        className="absolute left-1/2 z-10 h-[80px] w-[80px] sm:h-[120px] sm:w-[120px] overflow-hidden rounded-full bg-zinc-800 ring-2 ring-zinc-700/40"
       >
         <div
           style={{
@@ -106,14 +102,14 @@ const Spinner = ({
       {/* BOTTOM SPINNER */}
       <motion.div
         style={{
-          y: "50%",
+          y: "60%",
           x: "-50%",
         }}
         animate={{
           rotate: ["0deg", "0deg", "180deg", "180deg", "360deg", "360deg"],
         }}
         transition={TRANSITION}
-        className="absolute left-1/2 z-10 h-14 w-full overflow-hidden bg-zinc-800"
+        className="absolute left-1/2 z-10 h-[80px] w-[80px] sm:h-[120px] sm:w-[120px] overflow-hidden rounded-full bg-zinc-800 ring-2 ring-zinc-700/40"
       >
         <div
           style={{

@@ -166,7 +166,7 @@ const AboutBlock = () => (
   <Block className="col-span-12 text-3xl leading-snug">
     <p className="text-zinc-400">
       Crafting digital masterpieces, one line at a time. With{" "}
-      <span className="text-white"> 2+ years</span> of experience building web
+      <span className="text-white"> 3+ years</span> of experience building web
       based solutions, and a passion for{" "}
       <span className="text-white"> UI/UX</span>, I bring a blend of technical
       strength and creative flair.
@@ -175,17 +175,33 @@ const AboutBlock = () => (
 );
 
 const LocationBlock = () => (
-  <Block className="col-span-12 flex flex-col items-center gap-4 md:col-span-3">
+  <Block className="col-span-12 flex flex-col items-center justify-center gap-3 md:col-span-3 relative overflow-hidden">
+    {/* Background glow effect */}
+    <div className="absolute inset-0 bg-gradient-to-br from-rose-500/10 via-transparent to-transparent" />
+    
     <LinkPreview url="https://maps.app.goo.gl/QgqiJEFLb3M2LS9r5">
-      <div className="flex flex-col  align-middle gap-4">
-        <FiMapPin className="text-3xl mx-auto" />
-        <p className="text-center text-lg text-zinc-400">Bengaluru, India</p>
+      <div className="flex flex-col items-center gap-3 relative z-10">
+        {/* Animated pin with ring */}
+        <div className="relative">
+          <motion.div
+            animate={{ scale: [1, 1.2, 1] }}
+            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+            className="absolute inset-0 rounded-full bg-rose-500/20 blur-md"
+          />
+          <div className="relative bg-zinc-700/50 rounded-full p-3 ring-2 ring-rose-500/30">
+            <FiMapPin className="text-2xl text-rose-400" />
+          </div>
+        </div>
+        <div className="text-center">
+          <p className="text-lg font-medium text-zinc-100">Bengaluru</p>
+          <p className="text-sm text-zinc-500">India 🇮🇳</p>
+        </div>
       </div>
     </LinkPreview>
   </Block>
 );
 const EmailListBlock = () => (
-  <Block className="col-span-12 md:col-span-9">
+  <Block className="col-span-12 md:col-span-9 p-0 overflow-hidden">
     <SwapLogos />
   </Block>
 );
