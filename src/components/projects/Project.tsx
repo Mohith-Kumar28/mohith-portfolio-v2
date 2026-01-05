@@ -10,6 +10,13 @@ import { SimpleCarousel } from "../ui/SimpleCarousel";
 import { sendGTMEvent } from "@next/third-parties/google";
 import { Chip } from "../util/Chip";
 
+// Helper to create URL-friendly slug from title
+const slugify = (text: string) =>
+  text
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "");
+
 interface Props {
   modalContent: JSX.Element;
   description: string;
@@ -41,6 +48,36 @@ export const Project = ({
 
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
+
+  const projectSlug = slugify(title);
+
+  // Sync modal state with URL query params
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const projectParam = params.get("project");
+
+    // Auto-open modal if URL has matching project param
+    if (projectParam === projectSlug && !isOpen) {
+      setIsOpen(true);
+    }
+  }, [projectSlug]);
+
+  // Update URL when modal opens/closes
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+
+    if (isOpen) {
+      params.set("project", projectSlug);
+    } else if (params.get("project") === projectSlug) {
+      params.delete("project");
+    }
+
+    const newUrl = params.toString()
+      ? `${window.location.pathname}?${params.toString()}${window.location.hash}`
+      : `${window.location.pathname}${window.location.hash}`;
+
+    window.history.replaceState({}, "", newUrl);
+  }, [isOpen, projectSlug]);
 
   useEffect(() => {
     if (isInView) {
