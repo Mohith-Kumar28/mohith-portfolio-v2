@@ -62,7 +62,81 @@ export const Projects = () => {
 };
 
 const projects = [
-  {
+
+   {
+    title: "Chef Rajblee",
+    imgSrc: "/works/9.png", 
+    ytVidSrc: "",
+    code: "",
+    projectLink: "https://rajbille.foozy.shop/",
+    tech: ["Private Chef Service", "NextJS", "TailwindCSS"],
+    description:
+      "A premium private chef service platform for Bangalore. Users can explore diverse cuisines, custom menus, and seamlessly book expert chefs for house parties, corporate events, and family dinners.",
+    modalContent: (
+      <>
+        <p>
+          Chef Rajblee offers a premium private chef experience in Bangalore, bringing authentic and fresh culinary masterpieces directly to your home. Whether it's an intimate dinner, a lively house party, or a corporate event, the platform makes it effortless to book a top-tier chef.
+        </p>
+        <p>
+          With over 10 years of experience and a 5.0 client rating across 150+ catered events, Chef Rajblee specializes in bespoke menus ranging from traditional Indian and Mughlai cuisines to international flavors like Continental, Pan-Asian, and Italian classics.
+        </p>
+        <p>
+          The booking process is simple and transparent: clients pick a date and menu, provide the ingredients, and the chef takes care of the rest—from cooking and elegant presentation to complete post-party cleaning and sanitization.
+        </p>
+        <p>
+          Built to provide a smooth digital experience, the platform showcases an extensive menu, client testimonials, and a smart booking system to seamlessly schedule and customize culinary experiences for up to 20 guests.
+        </p>
+      </>
+    ),
+  },
+
+   {
+    title: "Check It Out Media",
+    imgSrc: "/works/8.png",
+    ytVidSrc:
+      "https://www.youtube.com/embed/EnS9qqKbcDI?si=i2JTrxcWgdXYTwQO&autoplay=1&mute=1&playlist=EnS9qqKbcDI&loop=1",
+    code: "https://github.com/Mohith-Kumar28/check-it-out-media",
+    projectLink: "https://checkitoutmedia.in/",
+    tech: ["Landing Page Development", "NextJS", "Framer Motion"],
+    description:
+      "Embarked on a creative journey to elevate Check It Out Media's online presence with a sleek, engaging landing page. Leveraging NextJS for rapid development and Framer Motion for dynamic animations, I crafted a digital showcase that encapsulates their unique brand essence.",
+    modalContent: (
+      <>
+        <p>
+          Step into the world of Check It Out Media, a company that breathes
+          life into words through their creative projects. My mission was to
+          transform their digital footprint with a landing page that not only
+          showcases their work but also embodies their vibrant spirit.
+        </p>
+        <p>
+          Utilizing NextJS, I built a responsive and performant foundation for
+          the site, ensuring a seamless experience across devices. This choice
+          allowed for quick iterations and deployments, fitting perfectly with
+          the agile nature of the project.
+        </p>
+        <p>
+          To bring the design to life, Framer Motion became my animation
+          powerhouse. With its intuitive API, I was able to implement smooth
+          transitions and interactions that captivate visitors, aligning with
+          Check It Out Media's playful and innovative ethos.
+        </p>
+        <p>
+          The result is a landing page that stands out in the crowded digital
+          space, reflecting Check It Out Media's commitment to excellence and
+          creativity. It's not just a webpage; it's a gateway to exploring the
+          magic of words brought to life.
+        </p>
+        <p>
+          This project was a testament to the power of technology in
+          storytelling. By combining NextJS's efficiency with Framer Motion's
+          dynamism, I was able to create a digital experience that resonates
+          with Check It Out Media's audience, encouraging engagement and
+          fostering connections.
+        </p>
+      </>
+    ),
+  },
+    {
     title: "3DotAI",
     imgSrc: "/works/2.png",
     ytVidSrc:
@@ -258,8 +332,7 @@ const projects = [
       </>
     ),
   },
-
-
+ 
   // {
   //   title: "Arena",
   //   imgSrc: "/works/5.png",
@@ -306,52 +379,7 @@ const projects = [
   //     </>
   //   ),
   // },
-  {
-    title: "Check It Out Media",
-    imgSrc: "/works/8.png",
-    ytVidSrc:
-      "https://www.youtube.com/embed/EnS9qqKbcDI?si=i2JTrxcWgdXYTwQO&autoplay=1&mute=1&playlist=EnS9qqKbcDI&loop=1",
-    code: "https://github.com/Mohith-Kumar28/check-it-out-media",
-    projectLink: "https://checkitoutmedia.in/",
-    tech: ["Landing Page Development", "NextJS", "Framer Motion"],
-    description:
-      "Embarked on a creative journey to elevate Check It Out Media's online presence with a sleek, engaging landing page. Leveraging NextJS for rapid development and Framer Motion for dynamic animations, I crafted a digital showcase that encapsulates their unique brand essence.",
-    modalContent: (
-      <>
-        <p>
-          Step into the world of Check It Out Media, a company that breathes
-          life into words through their creative projects. My mission was to
-          transform their digital footprint with a landing page that not only
-          showcases their work but also embodies their vibrant spirit.
-        </p>
-        <p>
-          Utilizing NextJS, I built a responsive and performant foundation for
-          the site, ensuring a seamless experience across devices. This choice
-          allowed for quick iterations and deployments, fitting perfectly with
-          the agile nature of the project.
-        </p>
-        <p>
-          To bring the design to life, Framer Motion became my animation
-          powerhouse. With its intuitive API, I was able to implement smooth
-          transitions and interactions that captivate visitors, aligning with
-          Check It Out Media's playful and innovative ethos.
-        </p>
-        <p>
-          The result is a landing page that stands out in the crowded digital
-          space, reflecting Check It Out Media's commitment to excellence and
-          creativity. It's not just a webpage; it's a gateway to exploring the
-          magic of words brought to life.
-        </p>
-        <p>
-          This project was a testament to the power of technology in
-          storytelling. By combining NextJS's efficiency with Framer Motion's
-          dynamism, I was able to create a digital experience that resonates
-          with Check It Out Media's audience, encouraging engagement and
-          fostering connections.
-        </p>
-      </>
-    ),
-  },
+ 
   // {
   //   title: "Motive Plugin",
   //   imgSrc: "/works/7.png",

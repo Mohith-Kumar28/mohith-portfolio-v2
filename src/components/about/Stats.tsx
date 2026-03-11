@@ -5,17 +5,23 @@ import { AiFillCode, AiFillSmile } from "react-icons/ai";
 const WORK_TECHS = [
   "NextJS",
   "TypeScript",
-  "Express",
-  "MongoDB",
-  "Tailwind",
   "ShadCN",
   "Zustand",
   "Prisma",
+  "BetterAuth",
+  "Tanstack Query",
+  "TRPC",
+  "Live Kit",
+  "OpenAI/Vercel AI sdk",
+  "Express",
+  "MongoDB",
+  "Tailwind",
   "Postgres",
+  "Framer Motion",
   "NestJS",
   "ReactJS",
   "Redux",
-  "GitHub",
+  "Git",
 ];
 
 const FUN_TOOLS = ["Figma", "Base44", "Canva","Shopify",  "Webflow", "Python", "Wordpress", "FastAPI"];
