@@ -156,16 +156,16 @@ export const Project = ({
         <div className="mt-6">
           <Reveal width="w-full">
             {/* <Link href={projectLink} target="_blank" rel="nofollow"> */}
-            <div className="flex items-center gap-2 w-full">
+            <div className="flex items-center gap-2 w-full mt-2">
               <h4
                 onClick={() => setIsOpen(true)}
-                className="font-bold text-lg shrink-0 hover:underline decoration-dotted max-w-[calc(100%_-_150px)] cursor-pointer"
+                className="font-bold text-lg shrink-0 hover:underline decoration-dotted cursor-pointer"
               >
                 {title}
               </h4>
-              <div className=" flex flex-grow h-[1px] bg-zinc-600 mx-3" />
+              <div className="flex-grow h-[1px] bg-zinc-600 mx-2 sm:mx-3" />
 
-              <div className="flex items-center gap-4 text-xl">
+              <div className="flex items-center gap-3 sm:gap-4 text-xl shrink-0">
                 {code && code !== "" && (
                   <Link
                     target="_blank"
@@ -183,7 +183,7 @@ export const Project = ({
                     className="text-zinc-300 hover:text-rose-300 transition-colors flex items-center gap-1"
                     href={projectLink}
                   >
-                    <span className="text-base mr-1"> Live project </span>{" "}
+                    <span className="text-base mr-1 hidden sm:inline"> Live project </span>
                     <AiOutlineExport />
                   </Link>
                 )}

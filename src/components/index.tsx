@@ -11,7 +11,7 @@ import { BentoHero } from "./hero/BentoHero";
 
 export const HomPage = () => {
   return (
-    <div className="grid grid-cols-[54px_1fr]">
+    <div className="grid grid-cols-1 md:grid-cols-[54px_1fr]">
       <SideBar />
       <main>
         <Header />

@@ -11,7 +11,7 @@ export const Projects = () => {
     <section className="section-wrapper" id="projects">
       <SectionHeader title="Featured Projects" dir="r" />
       
-      <div className="px-8 pb-12 max-w-4xl mx-auto flex flex-col gap-12">
+      <div className="px-4 md:px-8 pb-12 max-w-4xl mx-auto flex flex-col gap-12">
         <div className="relative rounded-[0.7rem] p-[3px] bg-gradient-to-br from-rose-500 via-purple-500 to-rose-500 shadow-[0_0_30px_rgba(244,63,94,0.2)] hover:shadow-[0_0_40px_rgba(244,63,94,0.4)] transition-shadow duration-500">
           <div className="bg-zinc-800 rounded-lg h-full">
             <Project {...memorieProject} />
@@ -41,7 +41,7 @@ export const Projects = () => {
             height: 800,
           },
         }}
-        className="relative grid gap-8 grid-cols-1 md:grid-cols-2 p-8"
+        className="relative grid gap-8 grid-cols-1 md:grid-cols-2 px-4 md:px-8 py-8"
       >
         {/* <div className="grid gap-12 grid-cols-1 md:grid-cols-2"> */}
         {projects.map((project) => {
