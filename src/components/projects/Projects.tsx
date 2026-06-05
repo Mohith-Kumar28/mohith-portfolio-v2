@@ -9,7 +9,23 @@ export const Projects = () => {
   const [viewAllOpen, setViewAllOpen] = useState(true);
   return (
     <section className="section-wrapper" id="projects">
-      <SectionHeader title="Projects" dir="r" />
+      <SectionHeader title="Featured Projects" dir="r" />
+      
+      <div className="px-8 pb-12 max-w-4xl mx-auto flex flex-col gap-12">
+        <div className="relative rounded-[0.7rem] p-[3px] bg-gradient-to-br from-rose-500 via-purple-500 to-rose-500 shadow-[0_0_30px_rgba(244,63,94,0.2)] hover:shadow-[0_0_40px_rgba(244,63,94,0.4)] transition-shadow duration-500">
+          <div className="bg-zinc-800 rounded-lg h-full">
+            <Project {...memorieProject} />
+          </div>
+        </div>
+
+        <div className="relative rounded-[0.7rem] p-[3px] bg-gradient-to-br from-rose-500 via-purple-500 to-rose-500 shadow-[0_0_30px_rgba(244,63,94,0.2)] hover:shadow-[0_0_40px_rgba(244,63,94,0.4)] transition-shadow duration-500">
+          <div className="bg-zinc-800 rounded-lg h-full">
+            <Project {...sarasProject} />
+          </div>
+        </div>
+      </div>
+
+      <SectionHeader title="Other Projects" dir="l" />
 
       <motion.div
         initial={false}
@@ -61,63 +77,82 @@ export const Projects = () => {
   );
 };
 
+const memorieProject = {
+  title: "Memorie",
+  imgSrc: "",
+  ytVidSrc: "",
+  images: [
+    "/works/memorie/1.png",
+    "/works/memorie/2.png",
+    "/works/memorie/3.png",
+    "/works/memorie/4.png",
+    "/works/memorie/5.png",
+    "/works/memorie/6.png",
+    "/works/memorie/7.png",
+    "/works/memorie/8.png",
+  ],
+  code: "",
+  projectLink: "",
+  tech: ["React Native", "AI", "Knowledge Management"],
+  description:
+    "An intelligent memory base mobile app that turns scattered inputs into an auto-organizing system that thinks with you. Built with React Native, it captures photos, voice memos, and web links via a seamless WhatsApp integration. Under the hood, it uses HDBSCAN to automatically cluster topics, allowing you to bypass manual folders entirely and converse directly with your saved knowledge.",
+  modalContent: (
+    <>
+      <p>
+        Memorie is a continuous memory pipeline designed to replace fragmented note-taking systems like Notion, Apple Notes, and browser bookmarks. Built as a React Native mobile application, it offers a seamless workflow from unstructured thoughts to actionable intelligence.
+      </p>
+      <p>
+        Unlike static filing cabinets, Memorie allows you to capture anything (photos, voice memos, PDFs, web links) directly through the app or via WhatsApp integration. The engine automatically transcribes audio and intelligently scrapes clean text from platforms like YouTube, LinkedIn, and Amazon.
+      </p>
+      <p>
+        The core innovation lies in its Automated Wiki Clustering. Utilizing HDBSCAN, Memorie groups related memories into dynamically evolving topic pages without the need for manual folders or rigid tags. 
+      </p>
+      <p>
+        Retrieval is effortless: instead of keyword searching, you converse with an integrated chatbot that provides real-time answers with direct citations to your saved knowledge. Additionally, smart spaced-repetition alerts resurface insights right when you need to review them, cementing your learning.
+      </p>
+    </>
+  ),
+};
+
+const sarasProject = {
+  title: "SarasAI",
+  imgSrc: "",
+  ytVidSrc: "https://www.youtube.com/embed/Q_1CXHs9fjA?autoplay=1&mute=1&loop=1&playlist=Q_1CXHs9fjA",
+  images: [],
+  code: "",
+  projectLink: "",
+  tech: ["AI", "EdTech", "Career Guidance"],
+  description:
+    "A multimodal AI career discovery platform that guides students from high school confusion to clarity, using voice-first interactions and emotionally intelligent mentorship.",
+  modalContent: (
+    <>
+      <p>
+        SarasAI represents the future of educational guidance: a vertically integrated, AI-native career companion designed to help the next generation find their true calling.
+      </p>
+      <p>
+        Unlike traditional fragmented counseling, Saras acts as an Agentic AI system that understands a student's history, anticipates needs, and proactively manages their entire career planning lifecycle. It breaks the journey down into distinct phases: from discovery and alignment in early high school to targeted handholding and final college enrollment decisions.
+      </p>
+      <p>
+        A standout feature is its multimodal, voice-first interaction model. By allowing students to converse naturally, Saras lowers the barrier for those who struggle to articulate their aspirations over text. As it guides students, it builds a 'Digital DNA', providing a scientifically mapped and emotionally supported path forward.
+      </p>
+      <p>
+        Designed for the entire ecosystem (students, parents, and schools), SarasAI democratizes access to premium, 1-on-1 equivalent guidance at an exponentially lower cost.
+      </p>
+    </>
+  ),
+};
+
 const projects = [
-  {
-    title: "Memorie",
-    imgSrc: "",
-    ytVidSrc: "",
-    code: "",
-    projectLink: "https://memorie.in/",
-    tech: ["React Native", "AI", "Knowledge Management"],
-    description:
-      "An intelligent memory base mobile app that turns scattered inputs into an auto-organizing system that thinks with you.",
-    modalContent: (
-      <>
-        <p>
-          Memorie is a continuous memory pipeline designed to replace fragmented note-taking systems like Notion, Apple Notes, and browser bookmarks. Built as a React Native mobile application, it offers a seamless workflow from unstructured thoughts to actionable intelligence.
-        </p>
-        <p>
-          Unlike static filing cabinets, Memorie allows you to capture anything (photos, voice memos, PDFs, web links) directly through the app or via WhatsApp integration. The engine automatically transcribes audio and intelligently scrapes clean text from platforms like YouTube, LinkedIn, and Amazon.
-        </p>
-        <p>
-          The core innovation lies in its Automated Wiki Clustering. Utilizing HDBSCAN, Memorie groups related memories into dynamically evolving topic pages without the need for manual folders or rigid tags. 
-        </p>
-        <p>
-          Retrieval is effortless: instead of keyword searching, you converse with an integrated chatbot that provides real-time answers with direct citations to your saved knowledge. Additionally, smart spaced-repetition alerts resurface insights right when you need to review them, cementing your learning.
-        </p>
-      </>
-    ),
-  },
-  {
-    title: "SarasAI",
-    imgSrc: "",
-    ytVidSrc: "",
-    code: "",
-    projectLink: "https://sarasai.in/",
-    tech: ["AI", "EdTech", "Career Guidance"],
-    description:
-      "A multimodal AI career discovery platform that guides students from high school confusion to clarity, using voice-first interactions and emotionally intelligent mentorship.",
-    modalContent: (
-      <>
-        <p>
-          SarasAI represents the future of educational guidance: a vertically integrated, AI-native career companion designed to help the next generation find their true calling.
-        </p>
-        <p>
-          Unlike traditional fragmented counseling, Saras acts as an Agentic AI system that understands a student's history, anticipates needs, and proactively manages their entire career planning lifecycle. It breaks the journey down into distinct phases: from discovery and alignment in early high school to targeted handholding and final college enrollment decisions.
-        </p>
-        <p>
-          A standout feature is its multimodal, voice-first interaction model. By allowing students to converse naturally, Saras lowers the barrier for those who struggle to articulate their aspirations over text. As it guides students, it builds a 'Digital DNA', providing a scientifically mapped and emotionally supported path forward.
-        </p>
-        <p>
-          Designed for the entire ecosystem (students, parents, and schools), SarasAI democratizes access to premium, 1-on-1 equivalent guidance at an exponentially lower cost.
-        </p>
-      </>
-    ),
-  },
   {
     title: "LinkUp",
     imgSrc: "",
     ytVidSrc: "",
+    images: [
+      "/works/linkup/1.png",
+      "/works/linkup/2.png",
+      "/works/linkup/3.png",
+      "/works/linkup/4.png",
+    ],
     code: "",
     projectLink: "https://linkup-user-application.lodestar-v1.workers.dev/",
     tech: ["AI Networking", "Live Events Platform"],
@@ -144,6 +179,13 @@ const projects = [
     title: "InvoiceLab",
     imgSrc: "",
     ytVidSrc: "",
+    images: [
+      "/works/invoicelab/1.png",
+      "/works/invoicelab/2.png",
+      "/works/invoicelab/3.png",
+      "/works/invoicelab/4.png",
+      "/works/invoicelab/5.png",
+    ],
     code: "https://github.com/Mohith-Kumar28/invoice-lab",
     projectLink: "https://invoicelab.in/",
     tech: ["Document Tools", "NextJS", "TailwindCSS"],
