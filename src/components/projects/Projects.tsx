@@ -62,7 +62,110 @@ export const Projects = () => {
 };
 
 const projects = [
-
+  {
+    title: "Memorie",
+    imgSrc: "",
+    ytVidSrc: "",
+    code: "",
+    projectLink: "https://memorie.in/",
+    tech: ["React Native", "AI", "Knowledge Management"],
+    description:
+      "An intelligent memory base mobile app that turns scattered inputs into an auto-organizing system that thinks with you.",
+    modalContent: (
+      <>
+        <p>
+          Memorie is a continuous memory pipeline designed to replace fragmented note-taking systems like Notion, Apple Notes, and browser bookmarks. Built as a React Native mobile application, it offers a seamless workflow from unstructured thoughts to actionable intelligence.
+        </p>
+        <p>
+          Unlike static filing cabinets, Memorie allows you to capture anything—photos, voice memos, PDFs, web links—directly through the app or via WhatsApp integration. The engine automatically transcribes audio and intelligently scrapes clean text from platforms like YouTube, LinkedIn, and Amazon.
+        </p>
+        <p>
+          The core innovation lies in its Automated Wiki Clustering. Utilizing HDBSCAN, Memorie groups related memories into dynamically evolving topic pages without the need for manual folders or rigid tags. 
+        </p>
+        <p>
+          Retrieval is effortless: instead of keyword searching, you converse with an integrated chatbot that provides real-time answers with direct citations to your saved knowledge. Additionally, smart spaced-repetition alerts resurface insights right when you need to review them, cementing your learning.
+        </p>
+      </>
+    ),
+  },
+  {
+    title: "SarasAI",
+    imgSrc: "",
+    ytVidSrc: "",
+    code: "",
+    projectLink: "https://sarasai.in/",
+    tech: ["AI", "EdTech", "Career Guidance"],
+    description:
+      "A multimodal AI career discovery platform that guides students from high school confusion to clarity, using voice-first interactions and emotionally intelligent mentorship.",
+    modalContent: (
+      <>
+        <p>
+          SarasAI represents the future of educational guidance—a vertically integrated, AI-native career companion designed to help the next generation find their true calling.
+        </p>
+        <p>
+          Unlike traditional fragmented counseling, Saras acts as an Agentic AI system that understands a student's history, anticipates needs, and proactively manages their entire career planning lifecycle. It breaks the journey down into distinct phases: from discovery and alignment in early high school to targeted handholding and final college enrollment decisions.
+        </p>
+        <p>
+          A standout feature is its multimodal, voice-first interaction model. By allowing students to converse naturally, Saras lowers the barrier for those who struggle to articulate their aspirations over text. As it guides students, it builds a 'Digital DNA', providing a scientifically mapped and emotionally supported path forward.
+        </p>
+        <p>
+          Designed for the entire ecosystem—students, parents, and schools—SarasAI democratizes access to premium, 1-on-1 equivalent guidance at an exponentially lower cost.
+        </p>
+      </>
+    ),
+  },
+  {
+    title: "LinkUp",
+    imgSrc: "",
+    ytVidSrc: "",
+    code: "",
+    projectLink: "https://linkup-user-application.lodestar-v1.workers.dev/",
+    tech: ["AI Networking", "Live Events Platform"],
+    description:
+      "AI-powered networking platform for live events. Connects attendees through intent-based matching and provides a smart dashboard for organizers.",
+    modalContent: (
+      <>
+        <p>
+          LinkUp is an AI networking application designed to elevate the live event experience. It creates a seamless flow for attendees to join events, discover matches, and follow up, while providing organizers with a smart dashboard to manage the entire process.
+        </p>
+        <p>
+          The platform uses intent-based matching to connect attendees with the most relevant people in the room. By ranking suggestions based on profiles and goals, it ensures that every conversation is meaningful and aligned with participants' objectives.
+        </p>
+        <p>
+          Beyond simple matchmaking, LinkUp turns introductions into active chats, enabling a cleaner and more efficient post-event follow-up process. It replaces chaotic exchanges with organized connections that unlock direct messaging capabilities.
+        </p>
+        <p>
+          With dedicated entry points for both attendees and organizers, LinkUp bridges the gap between organizing a successful event and fostering valuable professional relationships among participants.
+        </p>
+      </>
+    ),
+  },
+  {
+    title: "InvoiceLab",
+    imgSrc: "",
+    ytVidSrc: "",
+    code: "https://github.com/Mohith-Kumar28/invoice-lab",
+    projectLink: "https://invoicelab.in/",
+    tech: ["Document Tools", "NextJS", "TailwindCSS"],
+    description:
+      "Create professional invoices, payslips, and QR codes in minutes. Clean layouts, fast export, and a privacy-first workflow that stays on your device.",
+    modalContent: (
+      <>
+        <p>
+          InvoiceLab is a local-first platform designed to create professional invoices, payslips, and QR codes in minutes. It focuses on clean layouts, fast PDF exports, and privacy-friendly workflows without requiring user signup.
+        </p>
+        <p>
+          It includes an Invoice Generator for creating customizable bills with line items, taxes, discounts, signatures, and payment instructions. The Payslip Generator enables quick generation of salary slips covering earnings and deductions. Additionally, the QR Code Generator provides a reliable tool for sharing links, Wi-Fi, emails, and more, complete with color and logo customizations.
+        </p>
+        <p>
+          Unlike traditional web apps, InvoiceLab runs entirely on the browser, meaning your generated document data is never uploaded to a backend. It leverages NextJS and modern web technologies to ensure a fast, robust, and responsive experience across all devices.
+        </p>
+        <p>
+          As an open-source project, it represents my commitment to building free, accessible, and high-quality utilities for everyday users and freelancers.
+        </p>
+      </>
+    ),
+  },
    {
     title: "Chef Rajblee",
     imgSrc: "/works/9.png", 
