@@ -16,29 +16,19 @@ export const About = () => {
               <span className="bg-rose-500 text-white py-2 px-3 rounded font-bold mr-1 float-left text-2xl">
                 I
               </span>
-              &apos;m a full-stack developer from Bengaluru, India, obsessed with
-              building slick, user-centric web applications. I love taking
-              complex problems and turning them into simple, elegant digital
-              experiences using code.
+              started my journey tinkering with simple websites, but my curiosity didn't stop there. Over time, I've evolved from a full-stack web developer into someone who loves hacking together solutions across the entire tech spectrum, from polished frontends to AI integrations and mobile applications. 
             </p>
           </Reveal>
 
           <Reveal>
             <p>
-              My journey started with building simple sites and quickly evolved
-              into developing production-ready SaaS tools, engaging freelance
-              projects, and launching full-scale platforms like my food-tech startup,
-              Foozy. Today, I continue to take on exciting projects and constantly
-              experiment with new ideas.
+              Recently, I've been building out tools that push my boundaries. For instance, I created <strong>Memorie</strong>, an intelligent mobile app that uses AI and auto-clustering to act as a second brain. Alongside that, I've launched platforms like <em>SarasAI</em> and <em>LinkUp</em>, blending modern UX with smart, intent-based systems. I'm obsessed with figuring things out and turning complex ideas into functional, real-world tools.
             </p>
           </Reveal>
 
           <Reveal>
             <p>
-              When I&apos;m not writing code, you&apos;ll probably find me
-              watching sci-fi movies, exploring new tech on YouTube, or
-              brainstorming my next big project. I&apos;m always eager to
-              collaborate, let&apos;s build something awesome together!
+              When I'm not deep into code, you'll probably catch me watching sci-fi movies, digging down a YouTube rabbit hole on some obscure new tech, or brainstorming my next wild project. If there's an interesting problem to solve, I'm always down to jump in.
             </p>
           </Reveal>
         </div>

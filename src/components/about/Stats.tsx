@@ -3,28 +3,40 @@ import Reveal from "../util/Reveal";
 import { AiFillCode, AiFillSmile } from "react-icons/ai";
 
 const WORK_TECHS = [
+  "React Native",
   "NextJS",
   "TypeScript",
-  "ShadCN",
-  "Zustand",
+  "Node.js",
+  "Postgres",
+  "MongoDB",
   "Prisma",
-  "BetterAuth",
+  "Tailwind",
+  "Framer Motion",
+  "ShadCN",
+  "ReactJS",
+  "Zustand",
   "Tanstack Query",
+  "NestJS",
+  "Express",
   "TRPC",
   "Live Kit",
-  "OpenAI/Vercel AI sdk",
-  "Express",
-  "MongoDB",
-  "Tailwind",
-  "Postgres",
-  "Framer Motion",
-  "NestJS",
-  "ReactJS",
-  "Redux",
+  "BetterAuth",
+  "Cloudflare",
+  "Serverless Architecture",
   "Git",
 ];
 
-const FUN_TOOLS = ["Figma", "Base44", "Canva","Shopify",  "Webflow", "Python", "Wordpress", "FastAPI"];
+const FUN_TOOLS = [
+  "OpenAI / AI SDK",
+  "Python",
+  "FastAPI",
+  "Llama-2",
+  "Figma",
+  "Canva",
+  "Webflow",
+  "Shopify",
+  "Wordpress",
+];
 
 export const Stats = () => {
   return (

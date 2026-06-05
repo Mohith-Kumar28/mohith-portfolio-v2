@@ -83,7 +83,7 @@ const HeaderBlock = () => (
     <h1 className="mb6 text-4xl font-medium leading-tight">
       Hi, I'm Mohith<span className="text-rose-500">.</span>{" "}
       <span className="text-zinc-400">
-        I build cool websites like this one.
+        I'm really good at figuring things out.
       </span>
     </h1>
     <OutlineButton
@@ -165,11 +165,9 @@ const SocialsBlock = () => (
 const AboutBlock = () => (
   <Block className="col-span-12 text-3xl leading-snug">
     <p className="text-zinc-400">
-      Crafting digital masterpieces, one line at a time. With{" "}
-      <span className="text-white"> 3+ years</span> of experience building web
-      based solutions, and a passion for{" "}
-      <span className="text-white"> UI/UX</span>, I bring a blend of technical
-      strength and creative flair.
+      I don't just stick to web development anymore. From{" "}
+      <span className="text-white"> AI and backend systems</span> to {" "}
+      <span className="text-white"> mobile apps</span>, I love taking on new challenges. If it's tech, I can build it.
     </p>
   </Block>
 );

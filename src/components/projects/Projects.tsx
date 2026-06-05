@@ -77,7 +77,7 @@ const projects = [
           Memorie is a continuous memory pipeline designed to replace fragmented note-taking systems like Notion, Apple Notes, and browser bookmarks. Built as a React Native mobile application, it offers a seamless workflow from unstructured thoughts to actionable intelligence.
         </p>
         <p>
-          Unlike static filing cabinets, Memorie allows you to capture anything—photos, voice memos, PDFs, web links—directly through the app or via WhatsApp integration. The engine automatically transcribes audio and intelligently scrapes clean text from platforms like YouTube, LinkedIn, and Amazon.
+          Unlike static filing cabinets, Memorie allows you to capture anything (photos, voice memos, PDFs, web links) directly through the app or via WhatsApp integration. The engine automatically transcribes audio and intelligently scrapes clean text from platforms like YouTube, LinkedIn, and Amazon.
         </p>
         <p>
           The core innovation lies in its Automated Wiki Clustering. Utilizing HDBSCAN, Memorie groups related memories into dynamically evolving topic pages without the need for manual folders or rigid tags. 
@@ -100,7 +100,7 @@ const projects = [
     modalContent: (
       <>
         <p>
-          SarasAI represents the future of educational guidance—a vertically integrated, AI-native career companion designed to help the next generation find their true calling.
+          SarasAI represents the future of educational guidance: a vertically integrated, AI-native career companion designed to help the next generation find their true calling.
         </p>
         <p>
           Unlike traditional fragmented counseling, Saras acts as an Agentic AI system that understands a student's history, anticipates needs, and proactively manages their entire career planning lifecycle. It breaks the journey down into distinct phases: from discovery and alignment in early high school to targeted handholding and final college enrollment decisions.
@@ -109,7 +109,7 @@ const projects = [
           A standout feature is its multimodal, voice-first interaction model. By allowing students to converse naturally, Saras lowers the barrier for those who struggle to articulate their aspirations over text. As it guides students, it builds a 'Digital DNA', providing a scientifically mapped and emotionally supported path forward.
         </p>
         <p>
-          Designed for the entire ecosystem—students, parents, and schools—SarasAI democratizes access to premium, 1-on-1 equivalent guidance at an exponentially lower cost.
+          Designed for the entire ecosystem (students, parents, and schools), SarasAI democratizes access to premium, 1-on-1 equivalent guidance at an exponentially lower cost.
         </p>
       </>
     ),
@@ -184,7 +184,7 @@ const projects = [
           With over 10 years of experience and a 5.0 client rating across 150+ catered events, Chef Rajblee specializes in bespoke menus ranging from traditional Indian and Mughlai cuisines to international flavors like Continental, Pan-Asian, and Italian classics.
         </p>
         <p>
-          The booking process is simple and transparent: clients pick a date and menu, provide the ingredients, and the chef takes care of the rest—from cooking and elegant presentation to complete post-party cleaning and sanitization.
+          The booking process is simple and transparent: clients pick a date and menu, provide the ingredients, and the chef takes care of the rest, from cooking and elegant presentation to complete post-party cleaning and sanitization.
         </p>
         <p>
           Built to provide a smooth digital experience, the platform showcases an extensive menu, client testimonials, and a smart booking system to seamlessly schedule and customize culinary experiences for up to 20 guests.
@@ -255,7 +255,7 @@ const projects = [
           3DotAI is built to run high volume, compliant creator outreach on
           TikTok using automated DM bots. It helps teams discover creators,
           craft personalized message templates, schedule multi step cadences,
-          and track replies and outcomes — all from a single dashboard.
+          and track replies and outcomes, all from a single dashboard.
         </p>
         <p>
           The campaign builder lets you define audiences, segment creators,
@@ -266,8 +266,8 @@ const projects = [
         <p>
           A rate‑limited sending service ensures safe delivery with
           anti‑spam controls, retries, and pause/resume for active campaigns.
-          Built‑in analytics surface key metrics — sends, opens, replies,
-          and conversions — so you can iterate quickly and double down on what
+          Built‑in analytics surface key metrics (sends, opens, replies,
+          and conversions) so you can iterate quickly and double down on what
           works.
         </p>
         <p>
@@ -279,7 +279,7 @@ const projects = [
         <p>
           Whether you’re testing a new campaign or scaling established
           workflows, 3DotAI gives you the control and observability needed to
-          run TikTok DM outreach at scale — with personalization and
+          run TikTok DM outreach at scale, with personalization and
           performance built in.
         </p>
       </>

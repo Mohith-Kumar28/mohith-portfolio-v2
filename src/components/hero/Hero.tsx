@@ -15,21 +15,15 @@ const Hero = () => {
           </Reveal>
           <Reveal>
             <h2 className="pointer-events-auto my-2 text-xl sm:text-2xl text-zinc-300 md:my-4 md:text-4xl">
-              I'm a{" "}
+              I'm good at{" "}
               <span className="font-semibold text-rose-500">
-                {`${"{"} Full Stack Developer ${"}"}`}
+                {`${"{"} figuring things out ${"}"}`}
               </span>
             </h2>
           </Reveal>
           <Reveal>
             <p className="pointer-events-auto leading-relaxed md:leading-relaxed max-w-xl text-sm text-zinc-300 bg-zinc-950/10 rounded-xl py-3 pr-2 backdrop-blur-lg md:text-base">
-              {/* / Building beautiful Web Experiences <br />/ Front-End Developer
-              at MapUp <br />/ Curious at exploring */}
-              Crafting digital masterpieces, one line at a time. With 3+ years
-              of experience building innovative software solutions, and a
-              passion for UI/UX, I bring a unique blend of technical prowess and
-              creative flair. Explore my work and let's create something
-              extraordinary together.
+              I don't just build web apps anymore. Whether it's AI models, frontend polish, complex backend architectures, mobile apps, or practically anything in tech. I love diving into the deep end. I thrive on picking up new tools quickly to build whatever needs to be built. Take a look at some of the stuff I've been working on!
             </p>
           </Reveal>
           <Reveal>
