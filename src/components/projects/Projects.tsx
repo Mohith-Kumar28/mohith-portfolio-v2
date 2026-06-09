@@ -92,7 +92,7 @@ const memorieProject = {
     "/works/memorie/8.png",
   ],
   code: "",
-  projectLink: "",
+  projectLink: "https://memorie.in/",
   tech: ["React Native", "AI", "Knowledge Management"],
   description:
     "An intelligent memory base mobile app that turns scattered inputs into an auto-organizing system that thinks with you. Built with React Native, it captures photos, voice memos, and web links via a seamless WhatsApp integration. Under the hood, it uses HDBSCAN to automatically cluster topics, allowing you to bypass manual folders entirely and converse directly with your saved knowledge.",
