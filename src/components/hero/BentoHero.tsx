@@ -2,7 +2,7 @@ import React from "react";
 import { MotionProps, motion } from "framer-motion";
 import { twMerge } from "tailwind-merge";
 import { FiArrowRight, FiMail, FiMapPin } from "react-icons/fi";
-import { SiBehance, SiGithub, SiGmail, SiLinkedin } from "react-icons/si";
+import { SiGithub, SiGmail, SiInstagram, SiLinkedin } from "react-icons/si";
 
 import { OutlineButton } from "../buttons/OutlineButton";
 import Link from "next/link";
@@ -149,14 +149,14 @@ const SocialsBlock = () => (
         rotate: "2.5deg",
         scale: 1.1,
       }}
-      className="col-span-6 bg-green-500 md:col-span-3"
+      className="col-span-6 bg-gradient-to-br from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] md:col-span-3"
     >
       <Link
-        href="https://www.behance.net/mohithkumar12"
+        href="https://www.instagram.com/ch.mohith_kumar/"
         target="_blank"
         className="grid h-full place-content-center text-3xl text-white"
       >
-        <SiBehance />
+        <SiInstagram />
       </Link>
     </Block>
   </>
