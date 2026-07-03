@@ -2,7 +2,8 @@ import React from "react";
 import { MotionProps, motion } from "framer-motion";
 import { twMerge } from "tailwind-merge";
 import { FiArrowRight, FiMail, FiMapPin } from "react-icons/fi";
-import { SiGithub, SiGmail, SiInstagram, SiLinkedin } from "react-icons/si";
+import { FaLinkedin } from "react-icons/fa";
+import { SiGithub, SiGmail, SiInstagram } from "react-icons/si";
 
 import { OutlineButton } from "../buttons/OutlineButton";
 import Link from "next/link";
@@ -111,7 +112,7 @@ const SocialsBlock = () => (
         target="_blank"
         className="grid h-full place-content-center text-3xl text-white"
       >
-        <SiLinkedin />
+        <FaLinkedin />
       </Link>
     </Block>
     <Block
