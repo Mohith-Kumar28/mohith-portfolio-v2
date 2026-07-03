@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
-import { SiGithub, SiGmail, SiInstagram, SiLinkedin } from "react-icons/si";
+import { FaLinkedin } from "react-icons/fa";
+import { SiGithub, SiGmail, SiInstagram } from "react-icons/si";
 
 export const Header = () => {
   return (
@@ -23,7 +24,7 @@ export const MyLinks = () => (
       target="_blank"
       rel="nofollow"
     >
-      <SiLinkedin />
+      <FaLinkedin />
     </Link>
     <Link
       className="text-zinc-300 hover:text-rose-300 transition-colors"

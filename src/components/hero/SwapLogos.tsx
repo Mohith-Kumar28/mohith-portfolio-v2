@@ -1,24 +1,14 @@
 "use client";
 import React from "react";
 import {
-  SiCss3,
-  SiExpress,
   SiFigma,
-  SiFramer,
-  SiHtml5,
-  SiJavascript,
-  SiMongodb,
   SiNestjs,
   SiNextdotjs,
-  SiNodedotjs,
   SiPostgresql,
   SiPrisma,
   SiReact,
-  SiTailwindcss,
   SiTypescript,
   SiDocker,
-  SiAmazon,
-  SiGit,
 } from "react-icons/si";
 import { motion } from "framer-motion";
 
